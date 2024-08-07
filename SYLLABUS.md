@@ -2,19 +2,19 @@
 
 ## Course information
 
-CPBS 7601 - Computing Skills in Biomedical Sciences
-Date: November, 2024
-Meetings: 2-4pm M-F
-Location: TBD
+- CPBS 7601 - Computing Skills in Biomedical Sciences
+- Date: November, 2024
+- Meetings: 2-4pm M-F
+- Location: TBD
 
 ## Instructor information
 
-Name: Gregory Way, PhD
-Office location: ASHB P12-6275
-Office hours: By appointment
-Contact: gregory.way@cuanschutz.edu
-Teaching Assistants: TBD
-TA office hours: TBD
+- Name: Gregory Way, PhD
+- Office location: ASHB P12-6275
+- Office hours: By appointment
+- Contact: gregory.way@cuanschutz.edu
+- Teaching Assistants: TBD
+- TA office hours: TBD
 
 ## Prerequisites
 
