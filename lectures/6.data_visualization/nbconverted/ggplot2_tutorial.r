@@ -17,12 +17,15 @@ custom_ggplot_theme <- theme_bw() + theme(
     strip.text = element_text(size = 15)
 )
 
-# Scatter plot of engine displacement vs highway miles per gallon
+# Scatter plot of sepal length vs petal width
 (
-  ggplot(data = iris, aes(x = Sepal.Length, y = Petal.Width))
+  ggplot(data = iris, aes(x = Sepal.Length, y = Petal.Width, color = Species))
   + geom_point()
   + custom_ggplot_theme
 )
+
+output_plot_filename <- file.path("example_figures", "simple_scatterplot_example.png")
+ggsave(output_plot_filename, width = 4, height = 4)
 
 # Scatter plot with color mapped to species
 (
@@ -38,6 +41,9 @@ custom_ggplot_theme <- theme_bw() + theme(
   + geom_point()
   + custom_ggplot_theme
 )
+
+output_plot_filename <- file.path("example_figures", "color_and_size_scatterplot_example.png")
+ggsave(output_plot_filename, width = 6, height = 4)
 
 # Certain decisions for mapping variables to visual elements are less effective
 # Take, for example, mapping species to a shape, or size, instead
@@ -55,6 +61,9 @@ custom_ggplot_theme <- theme_bw() + theme(
   + custom_ggplot_theme
 )
 
+output_plot_filename <- file.path("example_figures", "bad_shape_scatterplot_example.png")
+ggsave(output_plot_filename, width = 6, height = 4)
+
 (
   ggplot(
     data = iris,
@@ -67,6 +76,9 @@ custom_ggplot_theme <- theme_bw() + theme(
   + geom_point()
   + custom_ggplot_theme
 )
+
+output_plot_filename <- file.path("example_figures", "bad_size_scatterplot_example.png")
+ggsave(output_plot_filename, width = 6, height = 4)
 
 # You can also use facets to add a layer of complexity without trading off understanding.
 (
@@ -83,6 +95,9 @@ custom_ggplot_theme <- theme_bw() + theme(
   + scale_color_gradient(low = "pink", high = "purple")
   + custom_ggplot_theme
 )
+
+output_plot_filename <- file.path("example_figures", "facet_scatterplot_example.png")
+ggsave(output_plot_filename, width = 8, height = 4)
 
 
 # Choosing different colors impacts interpretability of the data
@@ -106,6 +121,8 @@ custom_ggplot_theme <- theme_bw() + theme(
     + custom_ggplot_theme
 )
 
+output_plot_filename <- file.path("example_figures", "bad_color_scatterplot_example.png")
+ggsave(output_plot_filename, width = 6, height = 4)
 
 # An example of a plot with a bad color palette
 (
@@ -123,6 +140,9 @@ custom_ggplot_theme <- theme_bw() + theme(
   + custom_ggplot_theme
 )
 
+output_plot_filename <- file.path("example_figures", "bad_color_facet_scatterplot_example.png")
+ggsave(output_plot_filename, width = 8, height = 4)
+
 # Box plot example
 box_plot_example <- (
   ggplot(
@@ -136,6 +156,9 @@ box_plot_example <- (
    + geom_point(position = position_jitter(width = 0.2), alpha = 0.5)
    + custom_ggplot_theme
 )
+
+output_plot_filename <- file.path("example_figures", "boxplot_example.png")
+ggsave(output_plot_filename, width = 4, height = 4)
 
 box_plot_example
     
@@ -158,10 +181,13 @@ box_plot_example
     x = "Sepal length",
     y = "Petal width"
     )
+  + scale_size_continuous(name = "Sepal\nwidth")
   + custom_ggplot_theme
   + guides(color = guide_legend(override.aes = list(size = 5), order = 1))
 )
-    
+
+output_plot_filename <- file.path("example_figures", "customized_scatterplot_example.png")
+ggsave(output_plot_filename, width = 6, height = 4)
 
 # Custom color scale
 custom_color_gg <- (
@@ -174,16 +200,21 @@ custom_color_gg <- (
       size = Sepal.Width
       )
     )
-  + geom_point()
+  + geom_point(alpha = 0.5)
   + scale_color_brewer(palette = "Set2")
   + custom_ggplot_theme
 )
+
+output_plot_filename <- file.path("example_figures", "customized_color_scatterplot_example.png")
+ggsave(output_plot_filename, width = 6, height = 4)
 
 custom_color_gg
 
 
 # We previously saved two figures, combine them here into one figure with patchwork
 custom_color_gg + box_plot_example + plot_layout(ncol = 1) + plot_annotation(tag_levels = "A")
+
+ggsave(file.path("example_figures", "patchwork_example.png"), width = 8, height = 10)
 
 # Load a built-in dataset for ggrepel example
 data("mpg")
@@ -231,3 +262,6 @@ subset_mpg_for_focused_labels <- mpg %>%
     + ylim(0, 50)
     + xlim(0, 8)
 )
+
+output_plot_filename <- file.path("example_figures", "mpg_ggrepel_example.png")
+ggsave(output_plot_filename, width = 10, height = 8)
