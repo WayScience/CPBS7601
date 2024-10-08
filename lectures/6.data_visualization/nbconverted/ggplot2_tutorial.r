@@ -8,14 +8,8 @@ library(patchwork)
 data("iris")
 head(iris)
 
-# Set a custom theme, to increase readability of plots
-custom_ggplot_theme <- theme_bw() + theme(
-    axis.text = element_text(size = 13),
-    axis.title = element_text(size = 15),
-    legend.text = element_text(size = 13),
-    legend.title = element_text(size = 15),
-    strip.text = element_text(size = 15)
-)
+# Source ggplot themes
+source("ggplot_themes.R")
 
 # Scatter plot of sepal length vs petal width
 (
@@ -25,7 +19,7 @@ custom_ggplot_theme <- theme_bw() + theme(
 )
 
 output_plot_filename <- file.path("example_figures", "simple_scatterplot_example.png")
-ggsave(output_plot_filename, width = 4, height = 4)
+ggsave(output_plot_filename, width = 6, height = 4)
 
 # Scatter plot with color mapped to species
 (
