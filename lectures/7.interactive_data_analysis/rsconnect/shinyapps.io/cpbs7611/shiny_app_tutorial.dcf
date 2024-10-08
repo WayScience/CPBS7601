@@ -1,0 +1,12 @@
+name: shiny_app_tutorial
+title: shiny_app_tutorial
+username: cpbs7611
+account: cpbs7611
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 12959202
+bundleId: 9198534
+url: https://cpbs7611.shinyapps.io/shiny_app_tutorial/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
