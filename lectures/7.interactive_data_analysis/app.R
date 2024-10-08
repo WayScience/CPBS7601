@@ -5,7 +5,7 @@ library(dplyr)
 library(ggplot2)
 
 # Load themes
-source(file.path("../6.data_visualization/ggplot_themes.R"))
+source("https://raw.githubusercontent.com/WayScience/CPBS7601/refs/heads/main/lectures/6.data_visualization/ggplot_themes.R")
        
 # Load built-in datasets
 data("mpg")
