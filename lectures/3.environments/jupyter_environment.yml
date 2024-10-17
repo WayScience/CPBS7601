@@ -10,6 +10,7 @@ dependencies:
   - r-irkernel
   - nb_conda_kernels
   - papermill
+  - ruff
 
   # Python packages
   - pandas=2.0
@@ -23,3 +24,6 @@ dependencies:
   - r-ggplot2=3.4
   - r-patchwork
   - r-ggrepel
+  - r-devtools
+  - r-usethis
+  - r-roxygen2
