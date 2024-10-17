@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "cpbs7601"
+version = "0.1.0"
+description = "Tutorials for computational reproducibility for biomedical scientists"
+authors = ["Gregory Way <gregory.way@gmail.com>"]
+license = "BSD 3-Clause"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
