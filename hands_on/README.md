@@ -5,4 +5,5 @@ We designed these materials to be practical and interactive, allowing you to app
 
 | Hands-on | Topic |
 | :-----: | :---: |
-| 1.Introduction | Design a simple computational biology experiment|
+| 1.Introduction | Design a simple computational biology experiment |
+| 2.Version control | Setting up and using GitHub |
