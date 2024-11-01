@@ -3,23 +3,24 @@
 ## Course information
 
 - CPBS 7601 - Computing Skills in Biomedical Sciences
-- Date: November, 2024
+- Dates: November 4th-20th, 2024
 - Meetings: 2-4pm M-F
-- Location: TBD
+- Location: Anschutz Health Sciences Building (AHSB) P12 4th floor Room 4002
 
 ## Instructor information
 
 - Name: Gregory Way, PhD
 - Office location: ASHB P12-6275
 - Office hours: By appointment
-- Contact: gregory.way@cuanschutz.edu
-- Teaching Assistants: TBD
-- TA office hours: TBD
+- Contact: gregory.way "at" cuanschutz "dot" edu
+- Teaching Assistants: Jade Young
+- TA contact: jade.young "at" cuanschutz "dot" edu
+- TA office hours: Immediately following each regular class
 
 ## Prerequisites
 
-This course is intended for students from the Computational Biosciences, Computational Neuroscience, Human Medical Genetics and Genomics, and related programs where student research will be primarily computational. 
-Students are required to have proficiency in coding (2+ years in R, python or equivalent) and have taken relevant computational coursework (or equivalent per instructor’s consent). 
+This course is intended for students from the Computational Biosciences, Computational Neuroscience, Human Medical Genetics and Genomics, and related programs where student research will be primarily computational.
+Students are required to have proficiency in coding (2+ years in R, python or equivalent) and have taken relevant computational coursework (or equivalent per instructor’s consent).
 If you are outside the programs listed above, please consult with the instructor before enrolling to assess fit.
 
 ## Requirements
@@ -27,6 +28,15 @@ If you are outside the programs listed above, please consult with the instructor
 Access to a computer with an internet connection and the ability to create programs.
 In general, you will need access to the computational resources necessary to perform hands-on exercises.
 If additional university supplied tools are necessary, please contact the instructor as soon as possible.
+
+## GitHub repositories
+
+All materials are available on GitHub with permissive open source licenses
+
+| Repository | Purpose |
+| :--------- | :------ |
+| https://github.com/WayScience/CPBS7601/ | Course materials |
+| https://github.com/WayScience/sandbox | Learning GitHub |
 
 ## Extra credit
 
@@ -50,16 +60,18 @@ To introduce the skills needed to perform reproducible and high quality computat
 
 ### Lecture 1: Introduction to reproducible research
 
-- Course overview
+- Course overview and mission statements
 - What is reproducibility in computational research?
 - Motivating theory and importance
-- **Hands-on**: Designing a simple computational experiment
+- **Hands-on:** Designing a simple computational experiment
 
 ### Lecture 2: Version control
 
-- Basics of Git and GitHub
 - Version control principles and practices
+- Version control case studies
+- Basics of Git and GitHub
 - Advanced topics
+- The computational biologist mindset
 - **Hands-on:** Setting up a GitHub account, setting up SSH keys, forking and cloning a git repository, and making a pull request
 
 ### Lecture 3: Computational environments
@@ -68,9 +80,78 @@ To introduce the skills needed to perform reproducible and high quality computat
 - Jupyter notebooks theory and practice
 - Understanding virtual machines and isolated environments (e.g., Conda)
 - Introduction to containers (e.g., Docker)
-- **Hands-on:** Install conda, creating and use the conda environment though jupyter notebook
+- Managing a project with Poetry
+- Continuous Integration and Continuous Deployment (CI/CD)
+- **Hands-on:** Setting up and managing a conda environment
 
-### Lectures 4-12: TBD
+### Lecture 4: Data wrangling
+
+- The mindset of a data scientist
+- Best practices for data management and processing
+- Tidy data
+- Introduction to the tidyverse in R
+- Introduction to pandas in python
+- Data wrangling for machine learning
+- **Hands-on:** Use pandas or tidyverse to visualize differences between R vs. scipy t-tests
+
+### Lecture 5: Workflows and orchestration
+
+- Tasks, dependencies, and DAGs
+- Bash
+- Tools for workflow orchestration (e.g., Snakemake, Nextflow)
+- **Assignment:** Creating and running a snakemake workflow
+
+### Lecture 6: Data visualization
+
+- Principles of data visualization
+- Using ggplot2 and other visualization tools
+- Data visualization software (ggplot2, patchwork, pandas)
+- Mindset and storytelling
+- **Hands-on:** Bad graph competition
+
+### Lecture 7: Developing apps for interactive data analysis
+
+- Exploratory data analysis
+- Hans Rosling’s GapMinder
+- Shiny principles and practice
+- **Assignment**: Building a simple Shiny app
+
+### Lecture 8: Documentation and readability
+
+- Importance of documentation in reproducible research
+- Markdown
+- Documentation in code
+- Auto-documentation
+- Testing frameworks
+- Helpful artificial intelligence tools
+- **Hands-on:** Personalize your GitHub profile with markdown
+
+### Lecture 9: R and Python packaging
+
+- The philosophy of packaging software
+- Creating and managing python packages with poetry
+- Creating and managing R packages with devtools and roxygen2
+- Data packaging
+- **Assignment:** Developing a simple R/Python package
+
+### Lecture 10: High performance computing and parallel computing
+
+- Overview of HPC, Alpine, and SLURM
+- Introduction to parallel computing and multithreading
+- **Hands-on:** Submitting simple jobs using SLURM
+
+### Lecture 11: Software gardening
+
+- General concepts for software development
+- Writing clean, maintainable code
+- **Hands-on:** Adding comments and improving code readability
+
+### Lecture 12: Reproducibility as an iterative process
+
+- Reproducibility is a north star
+- Iterative nature of reproducibility
+- Continuous integration and testing
+- **Hands-on:** File a pull request to improve the CPBS7601 github repository
 
 ### Lecture 13: Student presentations
 
@@ -89,16 +170,16 @@ Each student will create a short, 3-minute presentation consisting of three slid
   - Provide a brief overview of the software package's functionality and purpose.
 - Slide 2: Analysis and interest
   - Why is it interesting?
-  - Explain what makes this software package noteworthy or unique.
+    - Explain what makes this software package noteworthy or unique.
   - Who is developing it?
-  - Identify the developers or the organization behind the software. Provide any relevant background information.
+    - Identify the developers or the organization behind the software. Provide any relevant background information.
 - Slide 3: Relevance and practical experience
   - How might it be relevant for biomedical informatics?
-  - Discuss potential applications or implications of this software in the field of biomedical informatics.
+    - Discuss potential applications or implications of this software in the field of biomedical informatics.
   - Were you able to install it?
-  - Describe your experience with installing the software package.
+    - Describe your experience with installing the software package.
   - Did you try their tutorial?
-  - Share your experience with any tutorials provided by the developers. Mention any challenges or successes you encountered.
+    - Share your experience with any tutorials provided by the developers. Mention any challenges or successes you encountered.
 
 ### Instructions:
 
@@ -119,16 +200,18 @@ You will be graded on completeness and adherence to guidelines (e.g., timing, co
 
 There are three assignments in this course:
 
-- Developing a simple R or Python package
-- Building a simple Shiny or plot.ly application
-- Setting up a GitHub actions workflow
+- Creating and running a snakemake workflow
+- Building a simple Shiny application
+- Developing a single R or Python package
 
 ### Approach
+
 We will review the assignment in detail after each relevant lecture. 
 The second half of the lecture will be optional. 
 However, we encourage folks to stick around to work on their assignment. 
 We will be easily accessible then to answer any questions.
-The TAs will grade each assignment using the scale below. Please follow all instructions carefully!
+The TAs will grade each assignment using the scale below.
+Please follow all instructions carefully!
 
 ### Grading
 
