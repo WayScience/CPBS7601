@@ -5,5 +5,7 @@
 *.Rproj
 .Rhistory
 .RData
+#lecture 10 specific ignores
 .pre-commit-config.yaml
+lectures/10.HPC_and_parallel_compute/results/*
 

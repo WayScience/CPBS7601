@@ -4,9 +4,11 @@ channels:
   - defaults
 dependencies:
   - python=3.11
-  - pandas
-  - argparser
-  - jupyter
-  - ipykernel
-  - nbconvert
+  - conda-forge::pandas
+  - conda-forge::jupyter
+  - conda-forge::ipykernel
+  - conda-forge::nbconvert
+  - conda-forge::pip
+  - pip:
+    - argparse
 
