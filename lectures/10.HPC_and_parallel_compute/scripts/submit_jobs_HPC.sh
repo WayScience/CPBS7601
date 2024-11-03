@@ -19,9 +19,11 @@ readarray -t sequences < $sequences_path
 
 # set the number of sequences to analyze
 num_sequences=${#sequences[@]}
+SLURM_ID=$SLURM_ARRAY_TASK_ID
 
 command="python analyze_data.py --sequence"
+FLAGS="--array=0-$((num_sequences-1)) -c 1 --mem=10M --time=0-00:05:00"
 
-sbatch --array=0-$((num_sequences-1)) -c 1 --mem=10M --time=0-00:05:00 --wrap="$command ${sequences[@]}"
+sbatch "$FLAGS"  "$command ${sequences[SLURM_ID]}"
 
 conda deactivate
