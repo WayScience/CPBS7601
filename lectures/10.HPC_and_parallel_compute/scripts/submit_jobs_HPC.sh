@@ -7,6 +7,7 @@
 #SBATCH --account=amc-general
 #SBATCH --time=00:05:00
 #SBATCH --output=lecture10_output_%j.out
+#SBATCH --array=0-1
 
 module load anaconda
 
@@ -21,12 +22,9 @@ readarray -t sequences < $sequences_path
 num_sequences=${#sequences[@]}
 SLURM_ID=$SLURM_ARRAY_TASK_ID
 
-command="python analyze_sequences.py --sequence"
-FLAGS="--array=0-$((num_sequences-1)) -c 1 --mem=10M --time=0-00:05:00"
-
 # get start time
 start_time=$(date +%s)
-sbatch "$FLAGS"  "$command '${sequences[SLURM_ID]}'"
+srun python analyze_sequences.py --sequence "${sequences[SLURM_ID]}"
 end_time=$(date +%s)
-echo "Serial run time: $((end_time - start_time)) seconds"
+echo "HPC parallel run time: $((end_time - start_time)) seconds"
 conda deactivate
