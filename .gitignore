@@ -5,3 +5,5 @@
 *.Rproj
 .Rhistory
 .RData
+.pre-commit-config.yaml
+

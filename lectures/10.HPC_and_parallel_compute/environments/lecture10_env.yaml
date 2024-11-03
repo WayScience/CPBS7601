@@ -1,0 +1,12 @@
+name: lecture10_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pandas
+  - argparser
+  - jupyter
+  - ipykernel
+  - nbconvert
+
