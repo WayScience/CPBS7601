@@ -21,9 +21,12 @@ readarray -t sequences < $sequences_path
 num_sequences=${#sequences[@]}
 SLURM_ID=$SLURM_ARRAY_TASK_ID
 
-command="python analyze_data.py --sequence"
+command="python analyze_sequences.py --sequence"
 FLAGS="--array=0-$((num_sequences-1)) -c 1 --mem=10M --time=0-00:05:00"
 
-sbatch "$FLAGS"  "$command ${sequences[SLURM_ID]}"
-
+# get start time
+start_time=$(date +%s)
+sbatch "$FLAGS"  "$command '${sequences[SLURM_ID]}'"
+end_time=$(date +%s)
+echo "Serial run time: $((end_time - start_time)) seconds"
 conda deactivate
