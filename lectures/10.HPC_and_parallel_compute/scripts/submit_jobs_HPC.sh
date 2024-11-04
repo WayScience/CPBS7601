@@ -5,9 +5,9 @@
 #SBATCH --partition=amilan
 #SBATCH --qos=normal
 #SBATCH --account=amc-general
-#SBATCH --time=00:05:00
+#SBATCH --time=00:00:30
 #SBATCH --output=lecture10_output_%j.out
-#SBATCH --array=0-0
+#SBATCH --array=0-9
 
 module load anaconda
 
@@ -34,7 +34,3 @@ cat ../results/cpg_islands_HPC*.csv > ../results/combined_cpg_islands_HPC_combin
 # remove the individual output files
 rm ../results/cpg_islands_HPC*.csv
 
-# combine the stdout files
-cat lecture10_output_*.out > lecture10_combined_output.out
-# remove the individual stdout files
-rm lecture10_output_*.out
