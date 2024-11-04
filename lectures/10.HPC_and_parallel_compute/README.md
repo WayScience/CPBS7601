@@ -7,3 +7,20 @@ We have the following learning objectives:
 3. Learn about high performance computing
 4. Understand how to leverage high performance computing
 5. Learn how to use HPC resources and best practices
+
+We will be using some pre-written scripts to explore parallel computing and high performance computing.
+The following scripts are available in the [scripts](./scripts) directory:
+* [analyze_sequences](scripts/analyze_sequences.py)
+    * This is the base script that we will be using to analyze sequences.
+    Note that this script is serial but can be called to be parallelized.
+* [multiprocessing_run](scripts/multiprocessing_run.sh)
+    * This script runs itself in parallel using the `multiprocessing` module in Python.
+    This shell script is used to call the `multiprocessing_sequence_analysis.py` script below
+* [multiprocessing_sequence_analysis](scripts/multiprocessing_sequence_analysis.py)
+    * The script that is called by the `multiprocessing_run.sh` script.
+* [plot_parallel_compute_analysis](scripts/plot_parallel_compute_analysis.py)
+    * This script is used to plot the results of the parallel computing analysis.
+* [serial_run](scripts/serial_run.sh)
+    * This script runs the `analyze_sequences.py` script in serial.
+* [submit_jobs_HPC](scripts/submit_jobs_HPC.sh)
+    * This script is used to submit jobs to the HPC cluster in an array job.
