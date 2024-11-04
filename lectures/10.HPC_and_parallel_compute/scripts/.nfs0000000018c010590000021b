@@ -1,0 +1,2 @@
+/var/spool/slurmd/job9160052/slurm_script: line 27: python analyze_sequences.py --sequence: command not found
+HPC parallel run time: 0 seconds
