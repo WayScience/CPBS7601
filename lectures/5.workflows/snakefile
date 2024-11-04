@@ -1,0 +1,40 @@
+# Here is a simple example of a Snakemake workflow.
+#
+# We define three rules:
+# 1) Downloading a file.
+# 2) Processing the file.
+# 3) Creating a summary.
+
+# Note that you can write python script directly in the snakefile
+import pathlib
+
+# Make sure the path exists to where snakemake will dump the results
+output_path = pathlib.Path("snakemake_example_results")
+output_path.mkdir(exist_ok=True)
+
+# Define a rule to download a file
+rule download_file:
+    output: "snakemake_example_results/snakemake_downloaded_example_input.csv"
+    shell:
+        """
+        curl -o {output} https://raw.githubusercontent.com/WayScience/CPBS7601/7f138bcaffa403f6d7f9baad36cf7d8ffc039be2/lectures/4.data_wrangling/results/ttest_results_pandas.csv
+        """
+
+# Rule to count the number of lines in the input file
+rule count_lines:
+    input: "snakemake_example_results/snakemake_downloaded_example_input.csv"
+    output: "snakemake_example_results/snakemake_downloaded_example_input_line_count.txt"
+    shell:
+        """
+        wc -l {input} > {output}
+        """
+
+# Rule to create a summary report
+rule print_summary:
+    input: "snakemake_example_results/snakemake_downloaded_example_input_line_count.txt"
+    output: "snakemake_example_results/snakemake_downloaded_example_input_line_count_summary.txt"
+    shell:
+        """
+        echo "Line Count Summary:" > {output}
+        cat {input} >> {output}
+        """
