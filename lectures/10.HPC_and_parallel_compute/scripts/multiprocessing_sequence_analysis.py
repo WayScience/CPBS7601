@@ -43,7 +43,6 @@ if __name__ == "__main__":
     # import the data
     data = pd.read_csv(input_file_path, sep="\t", header=None)
     data.rename(columns={0: "sequence"}, inplace=True)
-    data.head()
 
     core_count = multiprocessing.cpu_count() - 2
     print(f"Running on {core_count} cores")

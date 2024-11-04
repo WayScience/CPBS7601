@@ -9,6 +9,8 @@ dependencies:
   - conda-forge::ipykernel
   - conda-forge::nbconvert
   - conda-forge::pip
+  - conda-forge::matplotlib
+  - conda-forge::seaborn
   - pip:
     - argparse
 
