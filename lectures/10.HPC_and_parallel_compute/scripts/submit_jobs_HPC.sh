@@ -30,11 +30,11 @@ echo "HPC parallel run time: $((end_time - start_time)) seconds"
 conda deactivate
 
 # combine the output files
-cat ../results/cpg_islands_HPC*.csv > ../results/cpg_islands_HPC_combined.csv
+cat ../results/cpg_islands_HPC*.csv > ../results/combined_cpg_islands_HPC_combined.csv
 # remove the individual output files
 rm ../results/cpg_islands_HPC*.csv
 
 # combine the stdout files
-cat lecture10_output_*.out > lecture10_output_combined.out
+cat lecture10_output_*.out > lecture10_combined_output.out
 # remove the individual stdout files
 rm lecture10_output_*.out
