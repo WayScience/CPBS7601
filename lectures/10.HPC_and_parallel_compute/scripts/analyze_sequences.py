@@ -26,8 +26,8 @@ def analyze_sequences(sequence: str) -> tuple:
     raw_count = 0
     c_count = 0
     cpg_count = 0
-    for i in enumerate(sequence):
-        if i[1] == "X":
+    for sequence_element in enumerate(sequence):
+        if sequence_element[1] == "X":
             c_count += 1
         raw_count += 1
 
