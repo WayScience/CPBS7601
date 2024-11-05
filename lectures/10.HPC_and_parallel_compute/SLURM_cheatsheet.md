@@ -61,7 +61,6 @@ suuser $USER
 suacct amc-general
 ```
 
-
 #### Example SBATCH
 ```
 #!/bin/bash
