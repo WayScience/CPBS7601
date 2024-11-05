@@ -4,6 +4,7 @@ For bash scripts, this line should be the first line of code in every script
 ```
 #!/bin/bash  # Shebang slash bin slash bash
 ```
+
 Next are the SBATCH commands that tell slurm scheduler how to handle your job
 
 ### Frequent SBATCH Commands
