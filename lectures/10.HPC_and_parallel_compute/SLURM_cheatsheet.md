@@ -8,7 +8,6 @@ For bash scripts, this line should be the first line of code in every script
 Next are the SBATCH commands that tell slurm scheduler how to handle your job
 
 ### Frequent SBATCH Commands
-```
 #SBATCH --job-name=parallel_job # job name
 #SBATCH -t 1-23:59:59   # D-HH-MM-SS
 #SBATCH -t 59           # MM
