@@ -10,3 +10,4 @@ We designed these materials to be practical and interactive, allowing you to app
 | 3.Environments | Creating and managing a conda environment |
 | 4.Data wrangling | Comparing differences between R and python t-test results |
 | 5.Workflows and orchestration | **Assignment:** Building a simple snakemake workflow |
+| 6.Data visualization | Bad graph competition |

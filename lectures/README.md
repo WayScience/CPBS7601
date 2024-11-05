@@ -13,3 +13,4 @@ We provide links to these resources below.
 | [3.Environments](https://docs.google.com/presentation/d/1Q3K3R4ol_u0o4U93nBNJI2cLOXkx_aGgsdEfQJkGEQk/edit#slide=id.g2f1180cf2d1_0_90) | Computational environments |
 | [4.Data wrangling](https://docs.google.com/presentation/d/1Jtty8IrwB5uGMpvD0a0caMF_WLsuWdPZVRStvU7Z11U/edit#slide=id.p) | Tidy data princples and software |
 | [5.Workflows and orchestration](https://docs.google.com/presentation/d/1RSY-eH6Au_LtbJIQuOfYFPspQnZFwFjnhuS9rgjX1Nw/edit#slide=id.p) | Workflow mindset and management |
+| [6.Data visualization](https://docs.google.com/presentation/d/1vcLDZXQTOZOBxCJRP70Dmwt2PIfgPKsKE_Ek0M1evfM/edit#slide=id.p) | Tips, tricks, and principles for data visualization |
