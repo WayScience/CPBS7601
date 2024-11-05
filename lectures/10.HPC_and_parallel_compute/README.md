@@ -15,7 +15,7 @@ The following scripts are available in the [scripts](./scripts) directory:
     Note that this script is serial but can be called to be parallelized.
 * [multiprocessing_run](scripts/multiprocessing_run.sh)
     * This script runs itself in parallel using the `multiprocessing` module in Python.
-    This shell script is used to call the `multiprocessing_sequence_analysis.py` script below
+    This shell script calls the `multiprocessing_sequence_analysis.py` script below
 * [multiprocessing_sequence_analysis](scripts/multiprocessing_sequence_analysis.py)
     * The script that is called by the `multiprocessing_run.sh` script.
 * [plot_parallel_compute_analysis](scripts/plot_parallel_compute_analysis.py)
