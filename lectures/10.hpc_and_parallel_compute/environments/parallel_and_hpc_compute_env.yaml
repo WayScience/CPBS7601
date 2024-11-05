@@ -1,4 +1,4 @@
-name: lecture10_env
+name: parallel_and_hpc_compute_env
 channels:
   - conda-forge
   - defaults

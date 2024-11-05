@@ -11,10 +11,10 @@
 
 module load anaconda
 
-conda activate lecture10_env
+conda activate parallel_and_hpc_compute_env
 
 sequences_path="../data/sequences_to_analyze.txt"
-output_file_name="../results/cpg_islands_HPC.csv"
+output_file_name="../results/5mc_HPC.csv"
 
 # read in the sequences
 readarray -t sequences < $sequences_path
@@ -24,13 +24,13 @@ num_sequences=${#sequences[@]}
 SLURM_ID=$SLURM_ARRAY_TASK_ID
 # get start time
 start_time=$(date +%s)
-python analyze_sequences.py --sequence "${sequences[$SLURM_ID]}" --output_file_name "$output_file_name"
+python 5mc_analysis.py --sequence "${sequences[$SLURM_ID]}" --output_file_name "$output_file_name"
 end_time=$(date +%s)
 echo "HPC parallel run time: $((end_time - start_time)) seconds"
 conda deactivate
 
 # combine the output files
-cat ../results/cpg_islands_HPC*.csv > ../results/combined_cpg_islands_HPC_combined.csv
+cat ../results/5mc_HPC*.csv > ../results/combined_5mc_HPC_combined.csv
 # remove the individual output files
-rm ../results/cpg_islands_HPC*.csv
+rm ../results/5mc_HPC*.csv
 

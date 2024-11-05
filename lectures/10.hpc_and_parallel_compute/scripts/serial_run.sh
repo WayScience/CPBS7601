@@ -1,10 +1,10 @@
 #!/bin/bash
 
-conda activate lecture10_env
+conda activate parallel_and_hpc_compute_env
 
 # profile the serial run
 sequences_path="../data/sequences_to_analyze.txt"
-output_file_name="../results/cpg_islands_serial.csv"
+output_file_name="../results/5mc_serial.csv"
 # remove the output file if it exists
 if [ -f "$output_file_name" ]; then
     rm $output_file_name
@@ -29,7 +29,7 @@ start_time=$(date +%s)
 for sequence in "${sequences[@]}"
 do
     echo sequence: $sequence
-    python analyze_sequences.py --sequence "$sequence" --output_file_name "$output_file_name"
+    python 5mc_analysis.py --sequence "$sequence" --output_file_name "$output_file_name"
 done
 
 end_time=$(date +%s)

@@ -1,13 +1,15 @@
 # Slurm Guide
 
-For bash scripts, this line should be the first line of code in every script 
+For bash scripts, this line should be the first line of code in every script
 ```
 #!/bin/bash  # Shebang slash bin slash bash
 ```
 
-Next are the SBATCH commands that tell slurm scheduler how to handle your job
+Next are the SBATCH directives that tell slurm scheduler how to handle your job.
+These directives should be at the top of your script, but under the shebang line.
 
-### Frequent SBATCH Commands
+### Frequent SLURM directives
+```
 #SBATCH --job-name=parallel_job # job name
 #SBATCH -t 1-23:59:59   # D-HH-MM-SS
 #SBATCH -t 59           # MM
@@ -18,14 +20,17 @@ Next are the SBATCH commands that tell slurm scheduler how to handle your job
 #SBATCH --mem=16G       # 16 Gigabytes
 #SBATCH --output=out_%j.log
 #SBATCH --ntasks     # number of tasks
-#SBATCH --mail-type=NONE, BEGIN, END, FAIL, ALL   # email events 
+#SBATCH --mail-type=NONE, BEGIN, END, FAIL, ALL   # email events
 #SBATCH --mail-user=email@ufl.edu
+```
+### Slurm Commands
+#### Environment modules
+```
 module purge # removes all modules
 module avail # lists all modules availble for loading
 module list # list all currently loaded modules
 module load # loads module (hint: us the tab key to autocomplete)
 ```
-### Slurm Commands
 #### Submitting a job
 ```
 sbatch script.sh  # submit script.sh

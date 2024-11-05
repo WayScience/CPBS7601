@@ -5,9 +5,9 @@ import time
 import pandas as pd
 
 
-def analyze_sequences(sequence: str) -> tuple:
+def count_5mc_sequences(sequence: str) -> tuple:
     """
-    This function analyzes a sequence for CpG content and returns the results.
+    This function analyzes a sequence for 5mc content and returns the results.
 
     Parameters
     ----------
@@ -17,7 +17,7 @@ def analyze_sequences(sequence: str) -> tuple:
     Returns
     -------
     c_count : int
-        the number of CpG sites in the sequence
+        the number of 5mc sites in the sequence
     raw_count : int
         the total number of C sites in the sequence
     """
@@ -26,13 +26,13 @@ def analyze_sequences(sequence: str) -> tuple:
     sequence = sequence.upper()
     raw_count = 0
     c_count = 0
-    cpg_count = 0
-    for i in enumerate(sequence):
-        if i[1] == "X":
+    count_5mc = 0
+    for sequence_element in enumerate(sequence):
+        if sequence_element[1] == "X":
             c_count += 1
         raw_count += 1
 
-    return c_count, raw_count, cpg_count
+    return c_count, raw_count, count_5mc, sequence
 
 
 if __name__ == "__main__":
@@ -51,7 +51,7 @@ if __name__ == "__main__":
     # start time profiling
     pool_start_time = time.time()
     # Use the pool to map the analyze_sequences function to the sequences in the data
-    results = pool.map(analyze_sequences, data["sequence"])
+    results = pool.map(count_5mc_sequences, data["sequence"])
 
     # Close the pool and wait for the work to finish
     pool.close()
@@ -60,9 +60,10 @@ if __name__ == "__main__":
     pool_end_time = time.time()
 
     # Convert the results to a DataFrame for easier analysis
-    results_df = pd.DataFrame(results, columns=["c_count", "raw_count", "cpg_count"])
-    # write the results to a file
-    results_df.to_csv(
-        "../results/cpg_islands_multiprocessing.csv", sep=",", index=False
+    results_df = pd.DataFrame(
+        results, columns=["raw_count", "c_count", "count_5mc", "sequence"]
     )
+    # write the results to a file
+    pathlib.Path("../results").mkdir(parents=True, exist_ok=True)
+    results_df.to_csv("../results/5mc_multiprocessing.csv", sep=",", index=False)
     print(f"{pool_end_time - pool_start_time} seconds to analyze.")
