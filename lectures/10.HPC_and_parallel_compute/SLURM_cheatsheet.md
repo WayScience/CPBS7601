@@ -1,6 +1,5 @@
 # Slurm Guide
 
-    
 For bash scripts this line should be the first line of code in every script 
 ```
 #!/bin/bash  # Shebang slash bin slash bash
