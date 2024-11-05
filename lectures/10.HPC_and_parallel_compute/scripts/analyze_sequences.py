@@ -50,7 +50,7 @@ def main():
     # make the results directory if it doesn't exist
     output_file.parent.mkdir(parents=True, exist_ok=True)
     with open(output_file, "a") as f:
-        f.write("raw_count,c_count, cpg_count, sequence\n")
+        f.write("raw_count,c_count,cpg_count,sequence\n")
         f.write(f"{raw_count},{c_count},{cpg_count},{sequence}\n")
 
 
