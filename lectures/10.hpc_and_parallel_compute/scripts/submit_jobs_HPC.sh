@@ -15,7 +15,6 @@ conda activate parallel_and_hpc_compute_env
 
 sequences_path="../data/sequences_to_analyze.txt"
 output_file_name="../results/5mc_HPC.csv"
-
 # read in the sequences
 readarray -t sequences < $sequences_path
 
@@ -29,8 +28,4 @@ end_time=$(date +%s)
 echo "HPC parallel run time: $((end_time - start_time)) seconds"
 conda deactivate
 
-# combine the output files
-cat ../results/5mc_HPC*.csv > ../results/combined_5mc_HPC_combined.csv
-# remove the individual output files
-rm ../results/5mc_HPC*.csv
 
