@@ -32,11 +32,11 @@ sbatch script.sh  # submit script.sh
 ```
 #### Checking job status
 ```
-squeue -u {User}  # check submitted jobs in queue 
+squeue -u {User}  # check submitted jobs in queue
 ```
 #### Canceling a job or all jobs
 ```
-scancel {jobid}  # Cancel job  
+scancel {jobid}  # Cancel job
 scancel -u {User}  # Cancel all jobs for user
 ```
 #### Check job details
@@ -69,6 +69,6 @@ suacct amc-general
 #SBATCH --mail-type=END,FAIL       # send email on job end/fail
 #SBATCH --mail-user=email@ufl.edu  # send email to this address
 
-module load python/3.9.6         
+module load python/3.9.6
 module list
 ```

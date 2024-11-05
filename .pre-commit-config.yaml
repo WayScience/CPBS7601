@@ -1,0 +1,49 @@
+repos:
+-   repo: https://gitlab.com/vojko.pribudic.foss/pre-commit-update
+    rev: v0.6.0post1  # Insert the latest tag here
+    hooks:
+    -   id: pre-commit-update
+        args: [--exclude, black, --keep, isort]
+  # Formats import order
+-   repo: https://github.com/pycqa/isort
+    rev: 5.12.0
+    hooks:
+    -   id: isort
+        name: isort (python)
+        args: ["--profile", "black", "--filter-files"]
+
+  #Code formatter for both python files and jupyter notebooks
+-   repo: https://github.com/psf/black
+    rev: 22.10.0
+    hooks:
+    -   id: black-jupyter
+    -   id: black
+        language_version: python3.10
+
+-   repo: https://github.com/nbQA-dev/nbQA
+    rev: 1.9.0
+    hooks:
+    -   id: nbqa-isort
+        additional_dependencies: [isort==5.6.4]
+        args: [--profile=black]
+
+
+  # remove unused imports
+-   repo: https://github.com/hadialqattan/pycln.git
+    rev: v2.4.0
+    hooks:
+    -   id: pycln
+
+  # additional hooks found with in the pre-commit lib
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+    -   id: trailing-whitespace # removes trailing white spaces
+    -   id: mixed-line-ending # removes mixed end of line
+        args:
+        -   --fix=lf
+    -   id: pretty-format-json # JSON Formatter
+        args:
+        -   --autofix
+        -   --indent=4
+        -   --no-sort-keys
