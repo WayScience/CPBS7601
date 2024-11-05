@@ -18,7 +18,7 @@ Next are the SBATCH commands that tell slurm scheduler how to handle your job
 #SBATCH --mem=16G       # 16 Gigabytes
 #SBATCH --output=out_%j.log
 #SBATCH --ntasks     # number of tasks
-#SBATCH --mail-type=NONE, BEGIN, END, FAIL, ALL   # Mail events 
+#SBATCH --mail-type=NONE, BEGIN, END, FAIL, ALL   # email events 
 #SBATCH --mail-user=email@ufl.edu
 ```
 ### Environment Modules
