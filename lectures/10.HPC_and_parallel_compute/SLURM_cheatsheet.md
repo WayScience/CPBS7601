@@ -20,9 +20,6 @@ Next are the SBATCH commands that tell slurm scheduler how to handle your job
 #SBATCH --ntasks     # number of tasks
 #SBATCH --mail-type=NONE, BEGIN, END, FAIL, ALL   # email events 
 #SBATCH --mail-user=email@ufl.edu
-```
-### Environment Modules
-```
 module purge # removes all modules
 module avail # lists all modules availble for loading
 module list # list all currently loaded modules
