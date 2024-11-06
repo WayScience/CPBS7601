@@ -14,3 +14,4 @@ We provide links to these resources below.
 | [4.Data wrangling](https://docs.google.com/presentation/d/1Jtty8IrwB5uGMpvD0a0caMF_WLsuWdPZVRStvU7Z11U/edit#slide=id.p) | Tidy data princples and software |
 | [5.Workflows and orchestration](https://docs.google.com/presentation/d/1RSY-eH6Au_LtbJIQuOfYFPspQnZFwFjnhuS9rgjX1Nw/edit#slide=id.p) | Workflow mindset and management |
 | [6.Data visualization](https://docs.google.com/presentation/d/1vcLDZXQTOZOBxCJRP70Dmwt2PIfgPKsKE_Ek0M1evfM/edit#slide=id.p) | Tips, tricks, and principles for data visualization |
+| [7.Interactive data anlaysis](https://docs.google.com/presentation/d/1Isgawc97E8SPH2Ra07QoIOcmQQPsEnrSzZa3exd17oE/edit#slide=id.p) | Concepts and pratical tips for interactive data analysis |
