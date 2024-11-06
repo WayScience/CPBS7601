@@ -7,7 +7,7 @@ For the sequences below, identify the number of 5mC in each sequence by using th
 * Serial approach
 * Parallel approach
     * Python multiprocessing approach
-    * Bash parallel approach
+    * GNU parallel approach
 * HPC approach
 
 Sequences:
