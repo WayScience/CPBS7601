@@ -1,0 +1,177 @@
+Last login: Tue Nov  5 12:38:40 on ttys002
+(base) waygr@CHAI-M-C02G83P ~ % cd repos/wayscience/CPBS7601
+(base) waygr@CHAI-M-C02G83P CPBS7601 % ls
+CPBS7601.Rproj	LICENSE.md	README.md	SYLLABUS.md	hands_on	lectures
+(base) waygr@CHAI-M-C02G83P CPBS7601 % cd ..
+(base) waygr@CHAI-M-C02G83P wayscience % mkdir temp
+(base) waygr@CHAI-M-C02G83P wayscience % cd temp
+(base) waygr@CHAI-M-C02G83P temp % git clone git@github.com:gwaybio/CPBS7601.git
+Cloning into 'CPBS7601'...
+remote: Enumerating objects: 199, done.
+remote: Counting objects: 100% (45/45), done.
+remote: Compressing objects: 100% (38/38), done.
+remote: Total 199 (delta 19), reused 22 (delta 7), pack-reused 154 (from 1)
+Receiving objects: 100% (199/199), 5.74 MiB | 6.11 MiB/s, done.
+Resolving deltas: 100% (63/63), done.
+(base) waygr@CHAI-M-C02G83P temp % cd CPBS7601
+(base) waygr@CHAI-M-C02G83P CPBS7601 % ls
+LICENSE.md	README.md	SYLLABUS.md	hands_on	lectures
+(base) waygr@CHAI-M-C02G83P CPBS7601 % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) waygr@CHAI-M-C02G83P CPBS7601 % git remote -v
+origin	git@github.com:gwaybio/CPBS7601.git (fetch)
+origin	git@github.com:gwaybio/CPBS7601.git (push)
+(base) waygr@CHAI-M-C02G83P CPBS7601 % cd ../
+(base) waygr@CHAI-M-C02G83P temp % cd ..
+(base) waygr@CHAI-M-C02G83P wayscience % cd CPBS7601
+(base) waygr@CHAI-M-C02G83P CPBS7601 % ls
+CPBS7601.Rproj	LICENSE.md	README.md	SYLLABUS.md	hands_on	lectures
+(base) waygr@CHAI-M-C02G83P CPBS7601 %
+(base) waygr@CHAI-M-C02G83P CPBS7601 % ls
+CPBS7601.Rproj	LICENSE.md	README.md	SYLLABUS.md	hands_on	lectures
+(base) waygr@CHAI-M-C02G83P CPBS7601 % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	lectures/8.documentation_readability/
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) waygr@CHAI-M-C02G83P CPBS7601 % ls
+CPBS7601.Rproj	LICENSE.md	README.md	SYLLABUS.md	hands_on	lectures
+(base) waygr@CHAI-M-C02G83P CPBS7601 % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	hands_on/lecture6_bad_data_visualization_competition.pdf
+	lectures/8.documentation_readability/
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) waygr@CHAI-M-C02G83P CPBS7601 % code .
+(base) waygr@CHAI-M-C02G83P CPBS7601 % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   hands_on/README.md
+	modified:   lectures/README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	hands_on/lecture6_bad_data_visualization_competition.pdf
+	lectures/8.documentation_readability/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) waygr@CHAI-M-C02G83P CPBS7601 % git checkout -b lecture6material
+Switched to a new branch 'lecture6material'
+(base) waygr@CHAI-M-C02G83P CPBS7601 % git status
+On branch lecture6material
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   hands_on/README.md
+	modified:   lectures/README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	hands_on/lecture6_bad_data_visualization_competition.pdf
+	lectures/8.documentation_readability/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) waygr@CHAI-M-C02G83P CPBS7601 % git add hands_on/README.md
+(base) waygr@CHAI-M-C02G83P CPBS7601 % git add lectures/README.md
+(base) waygr@CHAI-M-C02G83P CPBS7601 % git status
+On branch lecture6material
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   hands_on/README.md
+	modified:   lectures/README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	hands_on/lecture6_bad_data_visualization_competition.pdf
+	lectures/8.documentation_readability/
+
+(base) waygr@CHAI-M-C02G83P CPBS7601 % git commit -m 'add lecture 6 content links'
+[lecture6material 8a324c4] add lecture 6 content links
+ 2 files changed, 2 insertions(+)
+(base) waygr@CHAI-M-C02G83P CPBS7601 % git status
+On branch lecture6material
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	hands_on/lecture6_bad_data_visualization_competition.pdf
+	lectures/8.documentation_readability/
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) waygr@CHAI-M-C02G83P CPBS7601 % git add hands_on/lecture6_bad_data_visualization_competition.pdf
+(base) waygr@CHAI-M-C02G83P CPBS7601 % git status
+On branch lecture6material
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   hands_on/lecture6_bad_data_visualization_competition.pdf
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	lectures/8.documentation_readability/
+
+(base) waygr@CHAI-M-C02G83P CPBS7601 % git commit -m 'add hands-on details for bad data visualization'
+[lecture6material 52cc838] add hands-on details for bad data visualization
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hands_on/lecture6_bad_data_visualization_competition.pdf
+(base) waygr@CHAI-M-C02G83P CPBS7601 % git status
+On branch lecture6material
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	lectures/8.documentation_readability/
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) waygr@CHAI-M-C02G83P CPBS7601 % git push
+fatal: The current branch lecture6material has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin lecture6material
+
+(base) waygr@CHAI-M-C02G83P CPBS7601 % git push --set-upstream origin lecture6material
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 50.92 KiB | 50.92 MiB/s, done.
+Total 10 (delta 7), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (7/7), completed with 5 local objects.
+remote:
+remote: Create a pull request for 'lecture6material' on GitHub by visiting:
+remote:      https://github.com/gwaybio/CPBS7601/pull/new/lecture6material
+remote:
+To github.com:gwaybio/CPBS7601.git
+ * [new branch]      lecture6material -> lecture6material
+Branch 'lecture6material' set up to track remote branch 'lecture6material' from 'origin'.
+(base) waygr@CHAI-M-C02G83P CPBS7601 % log
+usage:
+    log <command>
+
+global options:
+    -?, --help
+    -q, --quiet
+    -v, --verbose
+
+commands:
+    collect         gather system logs into a log archive
+    config          view/change logging system settings
+    erase           delete system logging data
+    show            view/search system logs
+    stream          watch live system logs
+    stats           show system logging statistics
+
+further help:
+    log help <command>
+    log help predicates
+(base) waygr@CHAI-M-C02G83P CPBS7601 %
