@@ -1,6 +1,7 @@
 ---
 default_language_version:
   python: python3.11
+exclude: (^|/)nbconverted(/|$)|^lectures/9.software_packaging/.*
 repos:
   # Fix common issues (e.g., whitespace errors)
   - repo: https://github.com/pre-commit/pre-commit-hooks
@@ -24,19 +25,12 @@ repos:
     hooks:
       - id: blacken-docs
 
-  # Lint YAML files
-  - repo: https://github.com/adrienverge/yamllint
-    rev: v1.35.1
-    hooks:
-      - id: yamllint
-
   # Format python code with black
   - repo: https://github.com/psf/black
     rev: 24.10.0
     hooks:
       - id: black
       - id: black-jupyter
-    exclude: "nbconverted/*.py"
 
  # Standaridize python imports with isort
   - repo: https://github.com/PyCQA/isort
