@@ -6,7 +6,7 @@ library(ggplot2)
 
 # Load themes
 source("https://raw.githubusercontent.com/WayScience/CPBS7601/refs/heads/main/lectures/6.data_visualization/ggplot_themes.R")
-       
+
 # Load built-in datasets
 data("mpg")
 mpg <- mpg %>%
@@ -17,11 +17,11 @@ data("iris")
 # UI (User Interface)
 ui <- fluidPage(
   titlePanel("CPBS 7601 - Basic Shiny App Tutorial"),
-  
+
   tabsetPanel(
     tabPanel(
       "Exploring miles per gallon",
-      
+
       sidebarLayout(
         sidebarPanel(
           # First option - setting x axis
@@ -31,7 +31,7 @@ ui <- fluidPage(
             choices = colnames(mpg),
             selected = "displ"
           ),
-          
+
           # Second option - setting y axis
           selectInput(
             "mpg_yvar",
@@ -39,7 +39,7 @@ ui <- fluidPage(
             choices = colnames(mpg),
             selected = "hwy"
           ),
-          
+
           # Third option - setting fill color
           selectInput(
             "mpg_fill_color",
@@ -47,24 +47,24 @@ ui <- fluidPage(
             choices = colnames(mpg),
             selected = "class"
           ),
-          
+
           # First check box
           checkboxGroupInput(
             "mpg_years", "Select Car Years:",
             choices = sort(unique(mpg$year)),  # List all unique years as choices
             selected = unique(mpg$year)
-          ),  
-          
+          ),
+
           # Second checkbox
           checkboxInput("filter_duplicates", "Filter duplicate car models", value = FALSE)
         ),
-        
+
         mainPanel(
           plotOutput("ggplot_mpg")  # Output for the ggplot
         )
       )
     ),
-    
+
     tabPanel(
       "Exploring the iris dataset",
       sidebarLayout(
@@ -75,21 +75,21 @@ ui <- fluidPage(
              choices = colnames(iris),
              selected = "Sepal.Length"
              ),
-           
+
            selectInput(
              "iris_yvar",
-             "Y-axis variable:", 
+             "Y-axis variable:",
              choices = colnames(iris),
              selected = "Petal.Width"
              ),
-           
+
            selectInput(
              "iris_color_var",
              "Color by:",
              choices = colnames(iris),
              selected = "Species"
            ),
-           
+
            selectInput(
              "iris_size_var",
              "Size by:",
@@ -112,12 +112,12 @@ server <- function(input, output) {
     # Filter the data based on selected x-range from the slider
     filtered_data <- mpg %>%
       dplyr::filter(year %in% input$mpg_years)
-    
+
     if (input$filter_duplicates) {
       filtered_data <- filtered_data %>%
         dplyr::distinct(full_car_name, .keep_all = TRUE)
     }
-    
+
     # Create the plot using ggplot2
     (
       ggplot(
@@ -136,7 +136,7 @@ server <- function(input, output) {
       + scale_color_brewer(palette = "Set2")
     )
   })
-  
+
   # Plot for iris dataset
   output$ggplot_iris <- renderPlot({
     # Create the plot for iris dataset using ggplot2 with dynamic x, y, and color variables
@@ -158,7 +158,7 @@ server <- function(input, output) {
         custom_ggplot_theme
     )
   })
-  
+
 }
 
 # Run the app

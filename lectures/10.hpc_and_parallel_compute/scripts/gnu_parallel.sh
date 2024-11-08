@@ -23,4 +23,3 @@ parallel -j 10 python 5mc_analysis.py --sequence {} --output_file_name "$output_
 # get the end time
 end_time=$(date +%s)
 echo "Parallel run time: $((end_time - start_time)) seconds"
-

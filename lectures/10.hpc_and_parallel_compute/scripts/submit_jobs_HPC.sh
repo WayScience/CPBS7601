@@ -27,5 +27,3 @@ python 5mc_analysis.py --sequence "${sequences[$SLURM_ID]}" --output_file_name "
 end_time=$(date +%s)
 echo "HPC parallel run time: $((end_time - start_time)) seconds"
 conda deactivate
-
-
