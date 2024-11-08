@@ -13,7 +13,7 @@ This is a simple bash workflow that runs the pandas `data_wrangling` notebook.
 
 ```bash
 # To run the workflow, execute in the terminal:
-snakemake snakemake_example_results/snakemake_downloaded_example_input_line_count_summary.txt --forceall --cores 1
+snakemake --forceall --cores 1
 ```
 
 This is a simple snakemake workflow that downloads the results of the pandas data wrangling exercise and counts the number of lines in the downloaded file.
