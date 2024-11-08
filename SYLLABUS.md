@@ -43,8 +43,8 @@ All materials are available on GitHub with permissive open source licenses
 We will not accept extra credit assignments.
 
 ## Late policies
-We will accommodate reasonable requests for extension of project deadlines due to personal hardships. 
-Please contact Dr. Way with these requests. 
+We will accommodate reasonable requests for extension of project deadlines due to personal hardships.
+Please contact Dr. Way with these requests.
 Ideally, requests should be made at least two days before the deadline.
 
 ## Course objectives
@@ -53,8 +53,8 @@ To introduce the skills needed to perform reproducible and high quality computat
 
 ## Recommended pre-reading
 
-- Sandve et al. `Ten Simple Rules for Reproducible Computational Research`. 2013. PLoS Computational Biology. https://doi.org/10.1371/journal.pcbi.1003285 
-- Hadley Wickham. `Tidy Data`. 2014. Journal of Statistical Software. https://www.jstatsoft.org/article/view/v059i10 
+- Sandve et al. `Ten Simple Rules for Reproducible Computational Research`. 2013. PLoS Computational Biology. https://doi.org/10.1371/journal.pcbi.1003285
+- Hadley Wickham. `Tidy Data`. 2014. Journal of Statistical Software. https://www.jstatsoft.org/article/view/v059i10
 
 ## Course schedule
 
@@ -192,7 +192,7 @@ Each student will create a short, 3-minute presentation consisting of three slid
 
 This project will help you gain exposure to new tools in the field, develop your ability to quickly assess software packages, and enhance your presentation skills.
 
-### Presentation Grading: 
+### Presentation Grading:
 
 You will be graded on completeness and adherence to guidelines (e.g., timing, content, etc.).
 
@@ -206,9 +206,9 @@ There are three assignments in this course:
 
 ### Approach
 
-We will review the assignment in detail after each relevant lecture. 
-The second half of the lecture will be optional. 
-However, we encourage folks to stick around to work on their assignment. 
+We will review the assignment in detail after each relevant lecture.
+The second half of the lecture will be optional.
+However, we encourage folks to stick around to work on their assignment.
 We will be easily accessible then to answer any questions.
 The TAs will grade each assignment using the scale below.
 Please follow all instructions carefully!
@@ -243,7 +243,7 @@ Especially, given our commitment to improving health and biomedical research, we
 
 _Accommodation statement_
 The University of Colorado Anschutz Medical Campus is committed to providing equitable access to our programs for students with disabilities (e.g., psychological, attentional, learning, chronic health, sensory, and physical).
-To engage in a confidential conversation about the process for requesting reasonable accommodations in the classroom and clinical settings please contact The Office of Disability, Access, & Inclusion at: disabilityaccess@cuanschutz.edu or begin the process via the website. 
+To engage in a confidential conversation about the process for requesting reasonable accommodations in the classroom and clinical settings please contact The Office of Disability, Access, & Inclusion at: disabilityaccess@cuanschutz.edu or begin the process via the website.
 Accommodations are not provided retroactively, therefore, students are encouraged to begin this process early.
 
 _Religious observances_
@@ -253,10 +253,10 @@ If this applies to you, please speak with me directly as soon as possible at the
 _Classroom behavior_
 Students and faculty each have responsibility for maintaining an appropriate learning environment.
 Those who fail to adhere to such behavioral standards may be subject to discipline.
-Professional courtesy and sensitivity are especially important with respect to individuals and topics dealing with differences of race, color, culture, religion, creed, politics, veteran’s status, sexual orientation, gender, gender identity and gender expression, age, ability, and nationality. 
+Professional courtesy and sensitivity are especially important with respect to individuals and topics dealing with differences of race, color, culture, religion, creed, politics, veteran’s status, sexual orientation, gender, gender identity and gender expression, age, ability, and nationality.
 Class rosters are provided to the instructor with the student's legal name.
 I will honor your request to address you by an alternate name or gender pronoun.
-Please advise me of this preference early in the semester so that I may make appropriate changes to my records.  
+Please advise me of this preference early in the semester so that I may make appropriate changes to my records.
 
 _Discrimination and harassment_
 The University of Colorado Denver (CU-Denver) is committed to maintaining a positive learning, working, and living environment.
