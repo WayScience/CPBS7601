@@ -12,4 +12,4 @@ source "$(conda info --base)/etc/profile.d/conda.sh"
 conda activate cpbs7601
 
 # Step 3: Execute the pandas example
-papermill pandas_example.ipynb /dev/null
+papermill pandas_example.ipynb /dev/null --kernel python3
