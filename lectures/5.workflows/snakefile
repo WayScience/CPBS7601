@@ -7,6 +7,7 @@
 
 # Note that you can write python script directly in the snakefile
 import pathlib
+import pandas as pd
 
 # Make sure the path exists to where snakemake will dump the results
 output_path = pathlib.Path("snakemake_example_results")
@@ -14,7 +15,8 @@ output_path.mkdir(exist_ok=True)
 
 # Define a rule to download a file
 rule download_file:
-    output: "snakemake_example_results/snakemake_downloaded_example_input.csv"
+    output: "snakemake_example_results/downloaded_example_input.csv"
+    log: "logs/example_run.log"
     shell:
         """
         curl -o {output} https://raw.githubusercontent.com/WayScience/CPBS7601/7f138bcaffa403f6d7f9baad36cf7d8ffc039be2/lectures/4.data_wrangling/results/ttest_results_pandas.csv
@@ -22,19 +24,18 @@ rule download_file:
 
 # Rule to count the number of lines in the input file
 rule count_lines:
-    input: "snakemake_example_results/snakemake_downloaded_example_input.csv"
-    output: "snakemake_example_results/snakemake_downloaded_example_input_line_count.txt"
-    shell:
-        """
-        wc -l {input} > {output}
-        """
+    input: "snakemake_example_results/downloaded_example_input.csv"
+    output: "snakemake_example_results/downloaded_example_line_count.txt"
+    log: "logs/example_run.log"
+    run:
+        example_input_df = pd.read_csv(input[0])
+        line_count = example_input_df.shape[0]
+        with open(output[0], "w") as output_fh:
+            output_fh.write(f"{line_count}")
 
 # Rule to create a summary report
-rule print_summary:
-    input: "snakemake_example_results/snakemake_downloaded_example_input_line_count.txt"
-    output: "snakemake_example_results/snakemake_downloaded_example_input_line_count_summary.txt"
-    shell:
-        """
-        echo "Line Count Summary:" > {output}
-        cat {input} >> {output}
-        """
+rule all:
+    input:
+        "snakemake_example_results/downloaded_example_input.csv",
+        "snakemake_example_results/downloaded_example_line_count.txt"
+    default_target: True

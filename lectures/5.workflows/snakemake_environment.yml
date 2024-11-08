@@ -1,0 +1,16 @@
+name: cpbs7601_snakemake
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - conda-forge::python=3.11
+  - conda-forge::jupyter=1.0
+  - conda-forge::ipykernel
+  - conda-forge::nb_conda_kernels
+  - conda-forge::pandas=2.0
+  - conda-forge::numpy=1.25
+  - conda-forge::matplotlib
+  - conda-forge::seaborn
+  - conda-forge::plotnine
+  - bioconda::snakemake
+  - bioconda::snakefmt
