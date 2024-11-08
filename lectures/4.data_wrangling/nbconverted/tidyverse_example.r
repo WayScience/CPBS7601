@@ -54,7 +54,6 @@ cellline_id_df <- readr::read_csv(
 print(dim(cellline_id_df))
 head(cellline_id_df, 3)
 
-
 ## Step 1 - Rename column 1
 drug_screen_results_df <- drug_screen_results_df %>%
   dplyr::rename("BRD_ID" = `...1`)
