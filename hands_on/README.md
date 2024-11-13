@@ -13,3 +13,4 @@ We designed these materials to be practical and interactive, allowing you to app
 | 6.Data visualization            | Bad graph competition                                     |
 | 7.Interactive data analysis     | **Assignment:** Building a simple shiny app               |
 | 8.Documentation and readability | Customize your GitHub profile with a README.md            |
+| 9.R and Python Packaging        | **Assignment:** Building a simple R package               |
