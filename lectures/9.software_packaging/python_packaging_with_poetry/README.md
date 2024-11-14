@@ -39,7 +39,7 @@ pipx install poetry
 Verify that Poetry is installed correctly by checking its version:
 
 ```bash
-    poetry --version
+poetry --version
 ```
 
 For more detailed installation options (such as installing on Windows or using alternative methods), visit the official installation guide.
@@ -50,6 +50,17 @@ Once Poetry is installed, follow these steps to get started with creating and ma
 
 ### Step 1: Initialize a new project:
 
+### Starting from scratch
+
+**Note: The instructions assume that you are in the `9.software_packaging/python_packaging_with_poetry` directory.**
+
+```bash
+# using poetry, run
+poetry new cpbs7601  # Or whatever name you want to give your project
+```
+
+### Starting from an existing project
+
 Navigate to your desired project directory (which could be any subfolder within a GitHub repository) and initialize it as a Poetry project.
 Often, if you are developing a software tool, you will initiatilize this in the top directory.
 
@@ -57,14 +68,15 @@ Note: You can initialize a Poetry package in any subdirectory of a GitHub reposi
 This allows you to manage packages at the folder level rather than for the entire repo.
 
 ```bash
-
 cd path/to/your/folder  # Often the top level directory of a GitHub repo
 poetry init
 ```
 
 ### Step 2: Create pyproject.toml
 
-Follow the prompts to define project metadata and dependencies.
+If you used `poetry init` in an existing repository, follow the prompts to define project metadata and dependencies.
+
+If you used `poetry new` to create a new project, Poetry will create a pyproject.toml file for you.
 
 ### Step 3: Add dependencies
 
@@ -92,7 +104,7 @@ Poetry will create a virtual environment for your project and install the specif
 ### Running your project:
 
 You can execute your project or scripts within the Poetry-managed environment.
-To run a Python script, use the poetry run command:
+To run a Python script, use poetry to runthe command:
 
 ```bash
 poetry run python your_script.py
@@ -101,7 +113,6 @@ poetry run python your_script.py
 ### Building and publishing your package:
 
 Once your project is ready, you can build your package by running:
-
 
 ```bash
 poetry build
