@@ -145,7 +145,7 @@ To introduce the skills needed to perform reproducible and high quality computat
 
 - Covering how time and energy impact software development
 - Journeys on the garden lattice and within software forests
-- Hands-on: Cultivating the course garden
+- **Hands-on:** Cultivating the course garden
 
 ### Lecture 12: Reproducibility as an iterative process
 
