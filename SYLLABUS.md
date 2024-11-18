@@ -143,9 +143,9 @@ To introduce the skills needed to perform reproducible and high quality computat
 
 ### Lecture 11: Software gardening
 
-- General concepts for software development
-- Writing clean, maintainable code
-- **Hands-on:** Adding comments and improving code readability
+- Covering how time and energy impact software development
+- Journeys on the garden lattice and within software forests
+- Hands-on: Cultivating the course garden
 
 ### Lecture 12: Reproducibility as an iterative process
 
