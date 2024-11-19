@@ -82,6 +82,14 @@ For example, to add ggplot2 as a dependency, use:
 usethis::use_package("ggplot2")
 ```
 
+However, this does not automatically make these packages available to your function!
+To allow your function to access these, use @import within the roxygen2 documentation. 
+
+```r
+#' Function that needs ggplot2
+#' @import ggplot2
+```
+
 ### Step 4: Test install and package loading locally:
 
 To install and load your package locally during development, use the following command:
