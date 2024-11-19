@@ -164,6 +164,8 @@ Each student will create a short, 3-minute presentation consisting of three slid
 
 **Objective:** To discover and explore an open source software package that you were not familiar with before this assignment.
 
+_"If you are spending more than 1 hour preparing the presentation, you are either over-doing it or having too much fun, which is Okay"_ -- Greg 
+
 ### Presentation requirements:
 
 - Slide 1: Introduction to the software package
