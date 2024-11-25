@@ -24,9 +24,9 @@
 
 # Import the packages you are going to use
 # Do this after you introduce your notebook in cell 1 with documentation
+import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
-import matplotlib.pyplot as plt
 
 
 # ## Core Components of Jupyter Notebooks
@@ -84,7 +84,7 @@ get_ipython().run_line_magic('matplotlib', 'inline')
 # Example line magic
 get_ipython().run_line_magic('time', '')
 
-2+3
+2 + 3
 
 
 # In[6]:
@@ -124,7 +124,7 @@ captured_content()
 # In[8]:
 
 
-flights = sns.load_dataset('flights')
+flights = sns.load_dataset("flights")
 
 
 # In[9]:
@@ -190,3 +190,5 @@ plt.show()
 #   - You can save this in an `nbconverted` folder, and it will enable code reviewers to more easily comment on your code
 #   - Apply the command `jupyter nbconvert --to script jupyter_walkthrough.ipynb --output-dir nbconverted`
 #   - Run this every single time you make changes to the notebook.
+#   - It is helpful because any changes to this file is very hard to see in a pull request review. It makes it quite difficult to understand what has actually changed.
+#     - See https://github.com/WayScience/CPBS7601/#39 for an example of what I mean!
