@@ -191,4 +191,4 @@ plt.show()
 #   - Apply the command `jupyter nbconvert --to script jupyter_walkthrough.ipynb --output-dir nbconverted`
 #   - Run this every single time you make changes to the notebook.
 #   - It is helpful because any changes to this file is very hard to see in a pull request review. It makes it quite difficult to understand what has actually changed.
-#     - See https://github.com/WayScience/CPBS7601/#39 for an example of what I mean!
+#     - See https://github.com/WayScience/CPBS7601/pull/39 for an example of what I mean!
