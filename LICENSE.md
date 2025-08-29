@@ -1,6 +1,6 @@
 BSD 3-Clause License
 
-Copyright (c) 2024, The Way Lab, The University of Colorado Anschutz Medical Campus
+Copyright (c) 2025, The Way Lab, The University of Colorado Anschutz Medical Campus
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
