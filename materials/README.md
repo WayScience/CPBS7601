@@ -22,3 +22,25 @@ We provide links to these resources below.
 | [10.HPC and Parallel Computing](https://docs.google.com/presentation/d/1TRMKEXlIB0ZoYuf7h60TidJwtKtB2b2j_8U_JZkY8uA/edit#slide=id.p1)                  | Hardware, parallel computing, and Alpine HPC                 |
 | [11.Software Gardening](https://docs.google.com/presentation/d/1UIKlShdmGTQ86wRbYW3ndwcXdIaiSxr47E4dtOZt00A/edit#slide=id.g317ec89ef93_0_17)           | Mindset for sustaining code and projects                     |
 | [12.Reproducibility as an Iterative Process](https://docs.google.com/presentation/d/1_43ki2OyGj88qxt33wwDibjJXte2qfflCgsqcammKBc/edit#slide=id.p)      | Course recap and putting it all together                     |
+
+## Hands-on materials (and assignments)
+
+The second half of each meeting period is dedicated to hands-on materials.
+We designed these materials to be practical and interactive, allowing you to apply the concepts and techniques discussed in the lectures.
+
+[Back to Home](https://github.com/WayScience/CPBS7601)
+
+| Hands-on                                   | Topic                                                     |
+| :----------------------------------------- | :-------------------------------------------------------- |
+| 1.Introduction                             | Design a simple computational biology experiment          |
+| 2.Version control                          | Setting up and using GitHub                               |
+| 3.Environments                             | Creating and managing a conda environment                 |
+| 4.Data wrangling                           | Comparing differences between R and python t-test results |
+| 5.Workflows and orchestration              | **Assignment:** Building a simple snakemake workflow      |
+| 6.Data visualization                       | Bad graph competition                                     |
+| 7.Interactive data analysis                | **Assignment:** Building a simple shiny app               |
+| 8.Documentation and readability            | Customize your GitHub profile with a README.md            |
+| 9.R and Python Packaging                   | **Assignment:** Building a simple R package               |
+| 10.HPC and Parallel Computing              | No hands-on materials                                     |
+| 11.Software Gardening                      | Improving the course materials by opening an issue        |
+| 12.Reproducibility as an Iterative Process | Improving the course materials by filing a pull request   |
