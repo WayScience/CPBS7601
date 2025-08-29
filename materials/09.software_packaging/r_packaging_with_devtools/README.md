@@ -40,7 +40,7 @@ This creates the package folder with an R/ directory for your R scripts, a DESCR
 
 ### Step 2: Add and document your functionality:
 
-Inside the R/ directory, you can create .R files that will hold your functions. 
+Inside the R/ directory, you can create .R files that will hold your functions.
 Each function should be documented using roxygen2 syntax.
 
 roxygen2 allows you to write documentation directly above each function.
@@ -50,7 +50,7 @@ Here's an example of what your function with documentation might look like:
 #' Add two numbers
 #'
 #' This function adds two numbers together and returns the result.
-#' 
+#'
 #' @param x A numeric value.
 #' @param y A numeric value.
 #' @return The sum of `x` and `y`.
@@ -83,7 +83,7 @@ usethis::use_package("ggplot2")
 ```
 
 However, this does not automatically make these packages available to your function!
-To allow your function to access these, use @import within the roxygen2 documentation. 
+To allow your function to access these, use @import within the roxygen2 documentation.
 
 ```r
 #' Function that needs ggplot2

@@ -27,9 +27,9 @@ usethis::use_readme_md()  # Note, this will open an interactive window for editt
 # Define a function to multiply two numbers
 multiply_function <- "
 #' Multiply two numbers
-#' 
+#'
 #' This function multiplies two numbers together and returns the result.
-#' 
+#'
 #' @param a A numeric value.
 #' @param b A numeric value.
 #' @return The product of `a` and `b`.

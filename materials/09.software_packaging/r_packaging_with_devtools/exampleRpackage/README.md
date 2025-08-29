@@ -1,16 +1,16 @@
-
 # exampleRpackage
 
 <!-- badges: start -->
+
 <!-- badges: end -->
 
-The goal of exampleRpackage is to demonstrate how to build a simple R package. 
+The goal of exampleRpackage is to demonstrate how to build a simple R package.
 
 ## Installation
 
 You can install the development version of exampleRpackage using the instructions provided in the R script
 
-``` r
+```r
 # install.packages("pak")
 pak::pak("WayScience/CPBS7601")
 ```
@@ -19,8 +19,7 @@ pak::pak("WayScience/CPBS7601")
 
 This is a basic example which shows you how to solve a common problem:
 
-``` r
+```r
 library(exampleRpackage)
 multiply_numbers(2, 3)
 ```
-
