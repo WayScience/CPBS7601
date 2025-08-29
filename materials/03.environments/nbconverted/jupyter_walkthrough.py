@@ -50,14 +50,16 @@ print("I am going to output this in an 'output cell'")
 # ### Kernel
 # 
 # - The computational engine that executes the code contained in a notebook.
-# - Supports multiple languages (Python, R, etc.).
-# - You can customize kernels using conda environments
+# - Supports multiple languages.
+# - You can customize kernels using conda environments.
 # 
 # _lets check out our current kernel_
 
 # In[3]:
 
 
+# The exclamation mark is a special magic command that accesses the terminal
+# from a code cell.
 get_ipython().system(' conda list')
 
 
@@ -75,28 +77,21 @@ get_ipython().system(' conda list')
 
 
 # Example line magic
-get_ipython().run_line_magic('matplotlib', 'inline')
-
-
-# In[5]:
-
-
-# Example line magic
 get_ipython().run_line_magic('time', '')
 
 2 + 3
 
 
+# In[5]:
+
+
+get_ipython().run_cell_magic('capture', 'captured_content_example', 'print("This is an example showing jupyter cell magic.")\n')
+
+
 # In[6]:
 
 
-get_ipython().run_cell_magic('capture', 'captured_content', 'print("This is an example showing jupyter cell magic.")\n')
-
-
-# In[7]:
-
-
-captured_content()
+captured_content_example()
 
 
 # ## Key Features
@@ -121,37 +116,37 @@ captured_content()
 
 # ## Example usage
 
-# In[8]:
+# In[7]:
 
 
 flights = sns.load_dataset("flights")
 
 
-# In[9]:
+# In[8]:
 
 
 flights.info()
 
 
-# In[10]:
+# In[9]:
 
 
 flights.head()
 
 
-# In[11]:
+# In[10]:
 
 
 flights.passengers.sum()
 
 
-# In[12]:
+# In[11]:
 
 
 flights.year.unique()
 
 
-# In[13]:
+# In[12]:
 
 
 # Pivot the data to create a matrix suitable for a heatmap
@@ -169,7 +164,7 @@ plt.xticks(range(len(flights_pivot.columns)), flights_pivot.columns)
 plt.yticks(range(len(flights_pivot.index)), flights_pivot.index)
 
 # Add labels and title
-plt.title("Number of Passengers per Month (1949-1960)")
+plt.title("Number of Airline Passengers per Month (1949-1960)")
 plt.xlabel("Year")
 plt.ylabel("Month")
 
