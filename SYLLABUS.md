@@ -51,6 +51,16 @@ Ideally, requests should be made at least two days before the deadline.
 
 To introduce the skills needed to perform reproducible and high quality computational research in biomedical sciences.
 
+## Course expectations
+
+The course should be fun, not a chore.
+You are a PhD student, and you need to drive your own education.
+Therefore, it is up to you to determine how much you want to get out of the course.
+The hands-on materials and assignments should not take you longer than two hours, and they should not be stressful.
+If it is taking you longer than two hours, you are either being too much of a perfectionist or you are having too much fun, which is fine.
+You should be respectful of all people in the course; show up on time, ask questions, engage with the material, and help your neighbor.
+Communicate with the instructor for any expected course absences or assignment extensions.
+
 ## Recommended pre-reading
 
 - Sandve et al. `Ten Simple Rules for Reproducible Computational Research`. 2013. PLoS Computational Biology. https://doi.org/10.1371/journal.pcbi.1003285
