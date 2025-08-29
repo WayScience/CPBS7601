@@ -42,7 +42,6 @@ We will not accept extra credit assignments.
 
 ## Late policies
 
-Late policies
 We will accommodate reasonable requests for extension of project deadlines due to personal hardships.
 Please contact Dr. Way with these requests.
 Ideally, requests should be made at least two days before the deadline.

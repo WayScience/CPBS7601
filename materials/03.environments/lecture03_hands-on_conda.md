@@ -87,7 +87,7 @@ dependencies:
 
 ### Resources:
 
-[Miniconda Installation Guide](https://www.anaconda.com/docs/getting-started/miniconda/install)
-[Conda Documentation](https://docs.conda.io/en/latest/)
-[Managing Conda Environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
-[Mamba](https://github.com/mamba-org/mamba)
+- [Miniconda Installation Guide](https://www.anaconda.com/docs/getting-started/miniconda/install)
+- [Conda Documentation](https://docs.conda.io/en/latest/)
+- [Managing Conda Environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+- [Mamba](https://github.com/mamba-org/mamba)
