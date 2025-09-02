@@ -76,7 +76,7 @@ dependencies:
 
 6. Create the cpbs7601 conda environment
    - Navigate to the course GitHub repository, in the lecture 3 folder
-   - In this folder, you will see a file called `jupyter_environment.yml`
+   - In this folder, you will see a file called `cpbs7601_environment.yml`
      - What are the contents of this file?
    - Use the skills you developed in the previous five steps to create and activate this environment
    - This will be particularly important for the next lecture on data wrangling
