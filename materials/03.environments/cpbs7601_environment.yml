@@ -21,8 +21,8 @@ dependencies:
 
   # R packages
   - r-tidyverse=2.0
-  - r-ggplot2=3.4
-  - r-patchwork
+  - r-ggplot2=3.5
+  - r-patchwork=1.3
   - r-ggrepel
   - r-devtools
   - r-usethis
