@@ -3,7 +3,9 @@
 # We define three rules:
 # 1) Downloading a file.
 # 2) Processing the file.
-# 3) All, a target rule which specifies the expected output files
+# 3) All, a target rule which specifies expected files
+#
+# Run the snakefile with the command `snakemake --forceall --cores 1`
 
 # Note that you can write python script directly in the snakefile
 import pathlib
