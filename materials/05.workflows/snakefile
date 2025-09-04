@@ -16,24 +16,22 @@ output_path.mkdir(exist_ok=True)
 # Define a rule to download a file
 rule download_file:
     output: "snakemake_example_results/downloaded_example_input.csv"
-    log: "logs/example_run.log"
     shell:
         """
         curl -o {output} https://raw.githubusercontent.com/WayScience/CPBS7601/7f138bcaffa403f6d7f9baad36cf7d8ffc039be2/lectures/4.data_wrangling/results/ttest_results_pandas.csv
         """
 
-# Rule to count the number of lines in the input file
+# Define a rule to count the number of lines in the input file
 rule count_lines:
     input: "snakemake_example_results/downloaded_example_input.csv"
     output: "snakemake_example_results/downloaded_example_line_count.txt"
-    log: "logs/example_run.log"
     run:
         example_input_df = pd.read_csv(input[0])
         line_count = example_input_df.shape[0]
         with open(output[0], "w") as output_fh:
             output_fh.write(f"{line_count}")
 
-# Rule to create a summary report
+# Define the special "all" rule that specifies inputs
 rule all:
     input:
         "snakemake_example_results/downloaded_example_input.csv",
