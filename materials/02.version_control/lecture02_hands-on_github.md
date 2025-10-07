@@ -32,7 +32,7 @@ Learn how to set up a GitHub account, configure SSH keys, fork and clone a repos
 
 1. Follow sandbox instructions:
 
-   - https://github.com/gwaybio/CPBS7601/tree/main/materials/02.version_control/sandbox
+   - https://github.com/wayscience/CPBS7601/tree/main/materials/02.version_control/sandbox
    - Follow Steps 1-7 to add your details to the `students.md` file
 
 1. Let the instructor know when you are finished:
