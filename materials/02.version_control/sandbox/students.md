@@ -18,3 +18,4 @@
 | Jacey     | [@jaceybronte](https://github.com/jaceybronte)         | Way lab                                      |                            Tacos                             |
 | Kat       | [@klterwelp](https://github.com/klterwelp)             | Rotating                                     |                            Queso!                            |
 | Weishan   | [@wli51](https://github.com/wli51)                     | ---                                          |                            Curry                             |
+| Raymond   | [@rlesiyon](https://github.com/rlesiyon)               | Rotating                                     |                            Roti + Curry	                   |
