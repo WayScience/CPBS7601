@@ -19,3 +19,7 @@
 | Kat       | [@klterwelp](https://github.com/klterwelp)             | Rotating                                     |                            Queso!                            |
 | Weishan   | [@wli51](https://github.com/wli51)                     | ---                                          |                            Curry                             |
 | Joe       | [@jtbenthal](https://github.com/jtbenthal)             | Stranger Lab                                 |                            Noodles                           |
+| Breanna   | [@bremigio](https://github.com/bremigio)               | Rotating                                     |                           ceviche                            |
+| Christian | [@canderson318](https://github.com/canderson318)       | rotating                                     |                        chicken pot pie                       |
+| Luciana   | [@lucivargas](https://github.com/lucivargas)           | Lange                                        |                            Rice & Beans                      |
+| Raymond   | [@rlesiyon](https://github.com/rlesiyon)               | Rotating                                     |                            Roti + Curry	                     |
