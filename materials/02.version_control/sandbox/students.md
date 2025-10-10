@@ -22,9 +22,6 @@
 | Breanna   | [@bremigio](https://github.com/bremigio)               | Rotating                                     |                           ceviche                            |
 | Christian | [@canderson318](https://github.com/canderson318)       | rotating                                     |                        chicken pot pie                       |
 | Luciana   | [@lucivargas](https://github.com/lucivargas)           | Lange                                        |                            Rice & Beans                      |
-| Raymond   | [@rlesiyon](https://github.com/rlesiyon)               | Rotating                                     |                            Roti + Curry	                     |
 | Saloni    | [@gotchabuggs](https://github.com/gotchabuggs)         | Rotating                                     |                           Kare-Kare                          |
-| Raymond   | [@rlesiyon](https://github.com/rlesiyon)               | Rotating                                     |                            Roti + Curry	                     |
 | Wingerson | [@wingersonMJ](https://github.com/wingersonMJ)         | Colorado Concussion Research Lab             |                     Sesame chicken & Lo Mein                 |
-| Raymond   | [@rlesiyon](https://github.com/rlesiyon)               | Rotating                                     |                            Roti + Curry	                     |
 | Emily     | [@emilyekstrum](https://github.com/emilyekstrum)       | Rotating                                     |                            Baguette                          |
