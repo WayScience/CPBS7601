@@ -31,7 +31,7 @@ rule count_lines:
         example_input_df = pd.read_csv(input[0])
         line_count = example_input_df.shape[0]
         with open(output[0], "w") as output_fh:
-            output_fh.write(f"{line_count}")
+            output_fh.write(f"{line_count}\n")
 
 # Define the special "all" rule that specifies inputs
 rule all:
