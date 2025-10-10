@@ -25,3 +25,5 @@
 | Raymond   | [@rlesiyon](https://github.com/rlesiyon)               | Rotating                                     |                            Roti + Curry	                     
 | Emily     | [@emilyekstrum}(https://github.com/emilyekstrum)       | Rotating                                     |
                   Baguette
+| Saloni    | [@gotchabuggs](https://github.com/gotchabuggs)         | Rotating                                     |                           Kare-Kare                          |
+
