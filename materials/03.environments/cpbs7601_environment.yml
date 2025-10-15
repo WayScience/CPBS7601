@@ -18,6 +18,7 @@ dependencies:
   - matplotlib
   - seaborn
   - plotnine
+  - pytest
 
   # R packages
   - r-tidyverse=2.0
