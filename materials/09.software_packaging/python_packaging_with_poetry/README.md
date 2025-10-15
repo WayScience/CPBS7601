@@ -107,7 +107,16 @@ You can execute your project or scripts within the Poetry-managed environment.
 To run a Python script, use poetry to runthe command:
 
 ```bash
-poetry run python your_script.py
+poetry run python cpbs7601/multiply.py 3 4
+```
+
+You can also run the package in python
+
+```python
+# Make sure you are in the cpbs7601 folder
+from cpbs7601 import math_utils
+
+math_utils.multiply_integers(3, 4)
 ```
 
 ### Building and publishing your package:
@@ -122,6 +131,7 @@ This will create distribution archives in the dist/ folder.
 If you want to publish your package to PyPI, simply run:
 
 ```bash
+# Note, this will not work unless you have setup proper credentials on PyPI
 poetry publish
 ```
 
