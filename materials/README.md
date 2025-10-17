@@ -42,5 +42,5 @@ We designed these materials to be practical and interactive, allowing you to app
 | 8.Documentation and readability            | Customize your GitHub profile with a README.md            |
 | 9.R and Python Packaging                   | **Assignment:** Building a simple R package               |
 | 10.HPC and Parallel Computing              | No hands-on materials                                     |
-| 11.Software Gardening                      | Improving the course materials by opening an issue        |
+| 11.Software Gardening                      | Exploring Dependency Tropism                              |
 | 12.Reproducibility as an Iterative Process | Improving the course materials by filing a pull request   |
