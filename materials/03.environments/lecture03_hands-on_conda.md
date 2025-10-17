@@ -56,10 +56,10 @@ conda list
 ```
 
 5. Modify the environment in real time. This is super common in active development
-   - \[Good\] Add a new package
+   - [Good] Add a new package
      - To add a new package, run `conda install matplotlib` for example
-     - \[Note\] It is not recommended to mix environment managers (e.g., pip and conda)
-   - \[Better\] Add this package to the environment list and run `conda env update --file environment.yml`
+     - [Note] It is not recommended to mix environment managers (e.g., pip and conda)
+   - [Better] Add this package to the environment list and run `conda env update --file environment.yml`
 
 ```
 # For example, add matplotlib

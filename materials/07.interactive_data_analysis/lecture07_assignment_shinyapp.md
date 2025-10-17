@@ -23,7 +23,7 @@
 - Focus on functionality.
   - Consider whether having a dynamic plot is even helpful for analyzing the data.
   - Consider which aspects would be helpful for a user to explore.
-- \[Optional\] Publish Shiny app to https://www.shinyapps.io
+- [Optional] Publish Shiny app to https://www.shinyapps.io
 
 ### Deliverables
 

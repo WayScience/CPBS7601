@@ -68,7 +68,7 @@
 - A compressed package (e.g., tar.gz).
   - In R, this is output from devtools::build()
   - In python, this is output from poetry build
-- \[Optional\] Instead of the compressed package, send your completed R or Python package in a Git repository
+- [Optional] Instead of the compressed package, send your completed R or Python package in a Git repository
 - Brief report (½ to 1 page): Include the following details:
   - Purpose: Describe what your package does. Why is your package useful?
   - Limitations: What are some limitations of your package? How can this improve in the future?

@@ -5,7 +5,7 @@ exclude: (^|/)nbconverted(/|$)|^lectures/9.software_packaging/.*
 repos:
   # Fix common issues (e.g., whitespace errors)
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.2.0
+    rev: v6.0.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
@@ -14,26 +14,25 @@ repos:
 
   # Fix markdown formatting issues
   - repo: https://github.com/executablebooks/mdformat
-    rev: 0.7.18
+    rev: 1.0.0
     hooks:
       - id: mdformat
         additional_dependencies:
-          - mdformat-myst
           - mdformat-gfm
   - repo: https://github.com/asottile/blacken-docs
-    rev: 1.19.1
+    rev: 1.20.0
     hooks:
       - id: blacken-docs
 
   # Format python code with black
   - repo: https://github.com/psf/black
-    rev: 24.10.0
+    rev: 25.9.0
     hooks:
       - id: black
       - id: black-jupyter
 
  # Standaridize python imports with isort
   - repo: https://github.com/PyCQA/isort
-    rev: 5.13.2
+    rev: 7.0.0
     hooks:
       - id: isort

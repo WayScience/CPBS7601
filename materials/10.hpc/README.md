@@ -13,7 +13,7 @@ We will be using some pre-written scripts to explore parallel computing and high
 The following scripts are available in the [scripts](./scripts) directory:
 
 - [analyze_sequences](scripts/analyze_sequences.py)
-  - This script  contains the core sequence analysis function that we use to analyze sequences.
+  - This script contains the core sequence analysis function that we use to analyze sequences.
     Note this script is can be run for a single sequence and in a serial fashion but we will also call to be parallelized.
 - [multiprocessing_run](scripts/multiprocessing_run.sh)
   - This script runs itself in parallel using the `multiprocessing` module in Python.

@@ -43,7 +43,7 @@
   - There is no prescribed content—feel free to highlight what makes you unique as a scientist.
 - Think of ways to make your profile engaging for potential collaborators or employers who might visit your page.
 
-6. \[Optional\] Convert Your Profile to a GitHub Pages Website:
+6. [Optional] Convert Your Profile to a GitHub Pages Website:
 
 - If you want to make your profile accessible as a GitHub Pages site, you can convert it to a personal website.
 - Enable GitHub Pages under the repository settings.

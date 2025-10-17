@@ -18,10 +18,10 @@
 | Jacey     | [@jaceybronte](https://github.com/jaceybronte)         | Way lab                                      |                            Tacos                             |
 | Kat       | [@klterwelp](https://github.com/klterwelp)             | Rotating                                     |                            Queso!                            |
 | Weishan   | [@wli51](https://github.com/wli51)                     | ---                                          |                            Curry                             |
-| Joe       | [@jtbenthal](https://github.com/jtbenthal)             | Stranger Lab                                 |                            Noodles                           |
+| Joe       | [@jtbenthal](https://github.com/jtbenthal)             | Stranger Lab                                 |                           Noodles                            |
 | Breanna   | [@bremigio](https://github.com/bremigio)               | Rotating                                     |                           ceviche                            |
-| Christian | [@canderson318](https://github.com/canderson318)       | rotating                                     |                        chicken pot pie                       |
-| Luciana   | [@lucivargas](https://github.com/lucivargas)           | Lange                                        |                            Rice & Beans                      |
-| Saloni    | [@gotchabuggs](https://github.com/gotchabuggs)         | Rotating                                     |                           Kare-Kare                          |
-| Wingerson | [@wingersonMJ](https://github.com/wingersonMJ)         | Colorado Concussion Research Lab             |                     Sesame chicken & Lo Mein                 |
-| Emily     | [@emilyekstrum](https://github.com/emilyekstrum)       | Rotating                                     |                            Baguette                          |
+| Christian | [@canderson318](https://github.com/canderson318)       | rotating                                     |                       chicken pot pie                        |
+| Luciana   | [@lucivargas](https://github.com/lucivargas)           | Lange                                        |                         Rice & Beans                         |
+| Saloni    | [@gotchabuggs](https://github.com/gotchabuggs)         | Rotating                                     |                          Kare-Kare                           |
+| Wingerson | [@wingersonMJ](https://github.com/wingersonMJ)         | Colorado Concussion Research Lab             |                   Sesame chicken & Lo Mein                   |
+| Emily     | [@emilyekstrum](https://github.com/emilyekstrum)       | Rotating                                     |                           Baguette                           |
