@@ -1,6 +1,6 @@
 """
 This is a docstring. It describes the purpose of the file.
-In our case, this file will demonstate how to document code.
+In our case, this file will demonstrate how to document code.
 
 Note: Any formatting errors will be fixed by pre-commit.
 

@@ -32,7 +32,7 @@ These directives should be at the top of your script, but under the shebang line
 
 ```
 module purge # removes all modules
-module avail # lists all modules availble for loading
+module avail # lists all modules available for loading
 module list # list all currently loaded modules
 module load # loads module (hint: us the tab key to autocomplete)
 ```

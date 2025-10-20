@@ -105,7 +105,7 @@ This will bring you to the pull request screen.
 Ensure the branches are correct, add a specific and descriptive message, and then file your pull request!
 Note that the message you provided with the commit message is listed here.
 All changes require a repository maintainer to take a look and eventually merge in.
-Assign a maintainer to look, discuss, and eventuall `merge` in your changes!
+Assign a maintainer to look, discuss, and eventually `merge` in your changes!
 
 ![pull_request_notes](images/pull_request_notes.png?raw=true)
 
