@@ -1,11 +1,12 @@
-# install.packages(c("shiny", "dplyr", "ggplot2"))
+# install.packages(c("shiny", "shinythemes", "dplyr", "ggplot2"))
 
 library(shiny)
+library(shinythemes)
 library(dplyr)
 library(ggplot2)
 
 # Load themes
-source("https://raw.githubusercontent.com/WayScience/CPBS7601/refs/heads/main/lectures/6.data_visualization/ggplot_themes.R")
+source("https://raw.githubusercontent.com/WayScience/CPBS7601/refs/heads/main/materials/06.data_visualization/ggplot_themes.R")
 
 # Load built-in datasets
 data("mpg")

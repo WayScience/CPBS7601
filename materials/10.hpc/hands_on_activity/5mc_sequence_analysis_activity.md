@@ -2,7 +2,7 @@
 
 You want to identify the 5mC content in each of 10 sequences.
 Where X is 5mC and C is cytosine.
-The goal is to identify the number of 5mC in each sequence byt using mutliple compute approaches.
+The goal is to identify the number of 5mC in each sequence byt using multiple compute approaches.
 For the sequences below, identify the number of 5mC in each sequence by using the following approaches:
 
 - Serial approach

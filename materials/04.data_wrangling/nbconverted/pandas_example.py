@@ -81,7 +81,7 @@ compound_id_df.head(3)
 # In[5]:
 
 
-# Load compound identifier metadata
+# Load cell line identifier metadata
 cellline_id_df = pd.read_csv(f"{figshare_base_url}{cellline_file_id}")
 
 # Explore the data

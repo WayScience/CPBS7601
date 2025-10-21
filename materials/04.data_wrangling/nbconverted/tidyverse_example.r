@@ -42,7 +42,7 @@ compound_id_df <- readr::read_csv(
 print(dim(compound_id_df))
 head(compound_id_df, 3)
 
-# Load compound identifier metadata
+# Load cell line identifier metadata
 cellline_id_df <- readr::read_csv(
     paste0(figshare_base_url, cellline_file_id),
     col_types = readr::cols(

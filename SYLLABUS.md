@@ -63,6 +63,7 @@ Ideally, requests should be made at least two days before the deadline.
 All assignments must be submitted by the last day of class.
 
 ## Class attendance
+
 In-person and on-time attendance is required.
 Students arriving more than 10 minutes after the scheduled start of class will be considered late.
 Chronic lateness (defined as unexcused lateness to more than 10% of class sessions) will result in a 10% penalty in the overall course grade.
