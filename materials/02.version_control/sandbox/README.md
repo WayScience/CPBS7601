@@ -1,4 +1,4 @@
-# WayScience GitHub Sandbox
+# WayScience GitHub CPBS7601/sandbox
 
 **A place to mess around with git and GitHub**
 
@@ -23,15 +23,15 @@ By the end of the walkthrough, you will have added your name and lab to a separa
 
 ### Step 1 - Fork the Repository
 
-Navigate to the WayScience/sandbox repository and click `Fork` above.
+Navigate to the [WayScience/CPBS7601](https://github.com/WayScience/CPBS7601/tree/main) repository and click `Fork` above.
 
 ![fork](images/fork.png?raw=true)
 
-This will create a copy of the sandbox repository under your username.
+This will create a copy of the repository under your username.
 
 ### Step 2 - Clone your Fork into your local machine
 
-Navigate to your own fork of the WayScience/sandbox repository and clone with either `SSH` or `HTTPS`.
+Navigate to your own fork of the WayScience/CPBS7601 repository and clone with either `SSH` or `HTTPS`.
 I typically use `SSH`, but this requires activating SSH keys.
 
 ![clone](images/clone.png?raw=true)
@@ -39,7 +39,7 @@ I typically use `SSH`, but this requires activating SSH keys.
 Copy the line and paste it into your terminal.
 
 ```sh
-git clone git@github.com:<USERNAME>/sandbox.git
+git clone git@github.com:<USERNAME>/CPBS7601.git
 ```
 
 ### Step 3 - Create a Branch
@@ -49,7 +49,7 @@ The `Master` branch is typically the front facing landing page of all GitHub rep
 Other branches can be made that have other purposes, including development branches.
 For our example here, we are adding your name and info to a GCB markdown table.
 
-In the terminal (after navigating to the newly created `sandbox` directory (`cd sandbox`)), create and switch to a branch named `add-me`.
+In the terminal (after navigating to the newly created `CPBS7601` directory (`cd CPBS7601`)), create and switch to a branch named `add-me`.
 
 ```sh
 git checkout -b add-me
@@ -58,7 +58,7 @@ git checkout -b add-me
 ### Step 4 - Edit the Necessary Files
 
 Now is when changes actually happen.
-In your favorite text editor, add your information to the `students.md` file.
+In your favorite text editor, add your information to the `students.md` file, located in the material/02.version_control/sandbox folder.
 Once that is done, you can see explicitly which files have changed and what the changes are.
 
 ```sh
@@ -114,8 +114,8 @@ Assign a maintainer to look, discuss, and eventually `merge` in your changes!
 This is probably the most overlooked step of the pull request model: Ensuring the upstream branch, the fork, and your local machine are all at the same point.
 
 ```sh
-# Initialize the upstream branch - this is the `WayScience/sandbox` repository that your fork is of
-git remote add upstream git@github.com:WayScience/sandbox.git
+# Initialize the upstream branch - this is the `WayScience/CPBS7601` repository that your fork is of
+git remote add upstream git@github.com:WayScience/CPBS7601.git
 
 # Check remote branches - the upstream branch should be configured now
 git remote -v
@@ -123,7 +123,7 @@ git remote -v
 # Switch your branch back to your master
 git checkout master
 
-# Fetch any changes from the upstream branch (from the `WayScience/sandbox`)
+# Fetch any changes from the upstream branch (from the `WayScience/CPBS7601`)
 # This will include the newly merged pull request AND any other changes made by others
 # This should be done periodically to ensure your origin is up to date with the upstream
 git fetch upstream
