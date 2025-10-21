@@ -10,4 +10,4 @@ Course on computing skills in bioinformatics for CU Anschutz PhD Students.
 
 ## Winning Graphs (bad graph competition)
 
-- [2024 Winner](https://github.com/WayScience/CPBS7601/blob/main/hands_on/hall_of_infamy/ugly_plot_stacked_bar_polar.png)
+- [2024 Winner](https://github.com/WayScience/CPBS7601/blob/main/materials/06.data_visualization/hall_of_infamy/ugly_plot_stacked_bar_polar.png)
