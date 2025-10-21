@@ -76,13 +76,13 @@
 ### Resources:
 
 - R Package Development:
-  - R Packages by Hadley Wickham
-  - devtools Package Documentation
-  - testthat Package Documentation
+  - [R Packages by Hadley Wickham](https://r-pkgs.org)
+  - [devtools Package Documentation](https://cran.r-project.org/web/packages/devtools/devtools.pdf)
+  - [testthat Package Documentation](https://cran.r-project.org/web/packages/testthat/testthat.pdf)
 - Python Package Development:
-  - Python Packaging User Guide
-  - pytest Documentation
-  - Sphinx Documentation
+  - [Python Packaging User Guide](https://packaging.python.org/en/latest/)
+  - [pytest Documentation](https://docs.pytest.org/en/stable/)
+  - [Sphinx Documentation](https://www.sphinx-doc.org/en/master/)
 
 ### Tips:
 

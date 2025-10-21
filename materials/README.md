@@ -32,15 +32,15 @@ We designed these materials to be practical and interactive, allowing you to app
 
 | Hands-on                                   | Topic                                                     |
 | :----------------------------------------- | :-------------------------------------------------------- |
-| 1.Introduction                             | Design a simple computational biology experiment          |
-| 2.Version control                          | Setting up and using GitHub                               |
-| 3.Environments                             | Creating and managing a conda environment                 |
-| 4.Data wrangling                           | Comparing differences between R and python t-test results |
-| 5.Workflows and orchestration              | **Assignment:** Building a simple snakemake workflow      |
-| 6.Data visualization                       | Bad graph competition                                     |
-| 7.Interactive data analysis                | **Assignment:** Building a simple shiny app               |
-| 8.Documentation and readability            | Customize your GitHub profile with a README.md            |
-| 9.R and Python Packaging                   | **Assignment:** Building a simple R package               |
-| 10.HPC and Parallel Computing              | No hands-on materials                                     |
-| 11.Software Gardening                      | Exploring Dependency Tropism                              |
-| 12.Reproducibility as an Iterative Process | Improving the course materials by filing a pull request   |
+| [1.Introduction](https://github.com/WayScience/CPBS7601/blob/main/materials/01.introduction/lecture01_hands-on_experimental_design.md)                             | Design a simple computational biology experiment          |
+| [2.Version control](https://github.com/WayScience/CPBS7601/blob/main/materials/02.version_control/lecture02_hands-on_github.md)                          | Setting up and using GitHub                               |
+| [3.Environments](https://github.com/WayScience/CPBS7601/blob/main/materials/03.environments/lecture03_hands-on_conda.md)                             | Creating and managing a conda environment                 |
+| [4.Data wrangling](https://github.com/WayScience/CPBS7601/blob/main/materials/04.data_wrangling/lecture04_hands-on_datawrangling.md)                           | Comparing differences between R and python t-test results |
+| [5.Workflows and orchestration](https://github.com/WayScience/CPBS7601/blob/main/materials/05.workflows/lecture05_assignment_snakemake.md)              | **Assignment:** Building a simple snakemake workflow      |
+| [6.Data visualization](https://github.com/WayScience/CPBS7601/blob/main/materials/06.data_visualization/lecture06_hands-on_dataviz.md)                       | Bad graph competition                                     |
+| [7.Interactive data analysis](https://github.com/WayScience/CPBS7601/blob/main/materials/07.interactive_data_analysis/lecture07_assignment_shinyapp.md)                | **Assignment:** Building a simple shiny app               |
+| [8.Documentation and readability](https://github.com/WayScience/CPBS7601/blob/main/materials/08.documentation/lecture08_hands-on_github_profile.md)            | Customize your GitHub profile with a README.md            |
+| [9.R and Python Packaging](https://github.com/WayScience/CPBS7601/blob/main/materials/09.software_packaging/lecture09_software_packaging_assignment.md)                   | **Assignment:** Building a simple R package               |
+| [10.HPC and Parallel Computing](https://github.com/WayScience/CPBS7601/blob/main/materials/10.hpc/hands_on_activity/5mc_sequence_analysis_activity.md)              | No hands-on materials                                     |
+| [11.Software Gardening](https://github.com/WayScience/CPBS7601/blob/main/materials/11.software_gardening/lecture11_softwaregardening.pdf)                      | Improving the course materials by opening an issue        |
+| [12.Reproducibility as an Iterative Process](https://github.com/WayScience/CPBS7601/blob/main/materials/12.course_hygiene/lecture12_hands-on_improving_the_course.md) | Improving the course materials by filing a pull request   |

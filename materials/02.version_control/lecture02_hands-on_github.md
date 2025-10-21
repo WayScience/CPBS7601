@@ -17,6 +17,7 @@ Learn how to set up a GitHub account, configure SSH keys, fork and clone a repos
 
    - Visit GitHub.com and sign up for a free account if you don't already have one.
    - Complete your profile by adding a profile picture and a short bio - Create your "brand"!
+   - add a README file for your profile to customize your account homepage: https://medium.com/design-bootcamp/how-to-design-an-attractive-github-profile-readme-3618d6c53783
 
 1. Configuring SSH keys:
 

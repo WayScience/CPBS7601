@@ -17,7 +17,7 @@
 
 ### Tasks
 
-- Use ggplot2 to code a visualization that tells a compelling (or non-compelling) story.
+- Use ggplot2 + shiny in R or plotnine/seaborn/matplotlib + shiny in Python to code a visualization that tells a compelling (or non-compelling) story.
 - Implement at least three dynamic features to explore the dataset.
 - Use `shinydashboard` or `shinythemes` to create an aesthetically pleasing style.
 - Focus on functionality.
@@ -27,7 +27,7 @@
 
 ### Deliverables
 
-- An `app.R` file and/or an HTML link to their published app.
+- An `app.R` or `app.py` file and/or an HTML link to their published app.
 - Brief report (½ to 1 page): Include the following details:
   - Visualization purpose and goals:
     - Describe what your application visualizes.
@@ -44,5 +44,6 @@
 
 ### Tools
 
-- Suggested packages: `shiny`, `ggplot2`, `shinydashboard`, `shinythemes`
+- Suggested packages R: `shiny`, `ggplot2`, `shinydashboard`, `shinythemes`
+- Suggested packages Python: `shiny`,`plotnine`,`seaborn`,`matplotlib`
 - Students will have access to all online resources and examples to aid their development.
