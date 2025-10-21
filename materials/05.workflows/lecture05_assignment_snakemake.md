@@ -27,8 +27,8 @@ This task will focus on creating an efficient and modular pipeline that automate
 
    - Write a Snakefile that automates your pipeline. This should include:
      1. Rules for the key step(s) in your data wrangling process.
-     1. \[Optional\] The use of wildcards to handle input/output file names flexibly.
-     1. \[Optional\] Appropriate input/output declarations in each rule to create dependencies between tasks.
+     1. [Optional] The use of wildcards to handle input/output file names flexibly.
+     1. [Optional] Appropriate input/output declarations in each rule to create dependencies between tasks.
 
 1. Tools and libraries:
 
@@ -43,7 +43,7 @@ This task will focus on creating an efficient and modular pipeline that automate
 1. Local execution:
 
    - Run the pipeline locally on your machine using Snakemake.
-   - See if  all steps work correctly from start to finish when applied to your input data.
+   - See if all steps work correctly from start to finish when applied to your input data.
 
 ### Deliverables:
 
