@@ -12,6 +12,11 @@ We have the following learning objectives:
 We will be using some pre-written scripts to explore parallel computing and high performance computing.
 The following scripts are available in the [scripts](./scripts) directory:
 
+When loading gnu parallel in alpine, refer to [load gnu instruction](https://curc.readthedocs.io/en/latest/software/GNUParallel.html) 
+If running locally; refer to [Install gnu parallel locally](https://www.gnu.org/software/parallel/parallel_tutorial.html)
+
+
+
 - [analyze_sequences](scripts/analyze_sequences.py)
   - This script  contains the core sequence analysis function that we use to analyze sequences.
     Note this script is can be run for a single sequence and in a serial fashion but we will also call to be parallelized.
@@ -26,3 +31,6 @@ The following scripts are available in the [scripts](./scripts) directory:
   - This script runs the `analyze_sequences.py` script in serial.
 - [submit_jobs_HPC](scripts/submit_jobs_HPC.sh)
   - This script submits jobs to the HPC cluster in an array job.
+- [gnu_parallel](scripts/gnu_parallel.sh)
+  - This script will run the `5mc_analysis.py` script in parallel using GNU parallel
+
