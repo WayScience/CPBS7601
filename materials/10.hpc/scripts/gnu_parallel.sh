@@ -4,6 +4,9 @@
 
 conda activate parallel_and_hpc_compute_env
 
+# Instruction for loading/installing gnu parallel in alpine
+# module load gnu_parallel
+
 sequences_path="../data/sequences_to_analyze.txt"
 output_file_name="../results/5mc_parallel.csv"
 # remove the output file if it already exists
