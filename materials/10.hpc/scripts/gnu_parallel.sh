@@ -4,6 +4,11 @@
 
 conda activate parallel_and_hpc_compute_env
 
+# Instruction for loading/installing gnu parallel. 
+# [load gnu instruction](https://curc.readthedocs.io/en/latest/software/GNUParallel.html) 
+# module load gnu_parallel
+# [Install gnu parallel locally](https://www.gnu.org/software/parallel/parallel_tutorial.html)
+
 sequences_path="../data/sequences_to_analyze.txt"
 output_file_name="../results/5mc_parallel.csv"
 # remove the output file if it already exists
