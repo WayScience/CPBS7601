@@ -4,10 +4,10 @@ This lecture will cover parallel computing and high performance computing.
 We have the following learning objectives:
 
 1. Familiarize with the concept of parallel computing
-2. Understand how to leverage parallel computing
-3. Learn about high performance computing
-4. Understand how to leverage high performance computing
-5. Learn how to use HPC resources and best practices
+1. Understand how to leverage parallel computing
+1. Learn about high performance computing
+1. Understand how to leverage high performance computing
+1. Learn how to use HPC resources and best practices
 
 We will be using some pre-written scripts to explore parallel computing and high performance computing.
 The following scripts are available in the [scripts](./scripts) directory:
