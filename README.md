@@ -6,7 +6,7 @@ Course on computing skills in bioinformatics for CU Anschutz PhD Students.
 
 - [Lecture Slides](https://github.com/WayScience/CPBS7601/blob/main/materials/README.md)
 - [Hands-on Assignments](https://github.com/WayScience/CPBS7601/blob/main/materials/#hands-on-materials-and-assignments)
-- [Syllabus](https://github.com/WayScience/CPBS7601/blob/main/LICENSE.md)
+- [Syllabus](https://github.com/WayScience/CPBS7601/blob/main/SYLLABUS.md)
 
 ## Winning Graphs (bad graph competition)
 
